@@ -4,17 +4,21 @@ export default function Welcome() {
   return (
     <main
       style={{
-        minHeight: "100vh",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        alignItems: "center",
-        background: "linear-gradient(180deg,#0b1626 0%, #0b1a2b 100%)",
-        color: "white",
-        fontFamily: "Inter, sans-serif",
-        overflow: "hidden",
-      
-      }}
-    >
+       width: "100%",
+       minHeight: "100vh", // Cambiado a camelCase y con comillas
+       display: "grid",
+       gridTemplateColumns: "1fr 1fr",
+       background: "linear-gradient(180deg, #0b1626 0%, #0b1a2b 100%)",
+       color: "white",
+       fontFamily: "Inter, sans-serif",
+       overflow: "hidden",
+       margin: 0,
+       padding: 0
+
+    }}
+
+  
+>
       
       {/* --- COLUMNA IZQUIERDA --- */}
       <section
@@ -27,10 +31,21 @@ export default function Welcome() {
           textAlign: "center",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
-          <img src="/vite.svg" alt="logo" height="28" />
-          <h3 style={{ margin: 0, opacity: 0.85, letterSpacing: "2px" }}>RACE DATA</h3>
-        </div>
+        <div
+  style={{
+
+    position: "absolute",
+    top: "20px",
+    left: "20px",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  
+  }}
+>
+  <img src="/logo.jpeg" alt="Mi Logo" height="60" />
+</div>
+
 
         <h1 style={{ fontSize: "56px", lineHeight: "1.05", marginBottom: "10px" }}>
           BIENVENIDO AL EQUIPO
@@ -83,10 +98,16 @@ export default function Welcome() {
       {/* --- COLUMNA DERECHA: IMAGEN --- */}
       <section
         style={{
-          height: "100%",
-          position: "relative",
-          overflow: "hidden",
-          background: "url('/ch.jpeg') center/cover no-repeat",
+          
+
+    width: "100%",
+    height: "100%",
+    backgroundImage: "url('/ch.jpeg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    position: "relative"
+
         }}
       >
         {/* sombra degradada para contraste */}
