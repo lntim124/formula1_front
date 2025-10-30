@@ -23,6 +23,8 @@ export default function Welcome() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center", 
+          textAlign: "center",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
@@ -48,7 +50,9 @@ export default function Welcome() {
             Te damos la bienvenida a <strong>Red Bull Racing Data System</strong>. 
             ¡Adelante y explora los datos del equipo!
           </p>
-          <p style={{ color: "#ffd700", fontWeight: "600", marginTop: "12px" }}>
+          <p style={{ color: "#ffd700", fontWeight: "600", marginTop: "12px",
+              fontStyle: "italic",fontFamily: "'Dancing Script', cursive", 
+    fontSize: "28px" }}>
             Christian Horner
           </p>
         </div>
