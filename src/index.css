@@ -132,3 +132,9 @@ body{
   cursor:pointer; transition: transform .08s ease, background .15s ease;
 }
 .btn-primary:hover{ background:#b32018; transform: translateY(-1px); }
+
+.historia-equipo {
+  font-family: 'Poppins', sans-serif;
+  color: white; /* opcional */
+  line-height: 1.6;
+}
