@@ -87,6 +87,7 @@ const styles = {
 
 
   homeContainer: {
+    flexWrap: "wrap",
     display: "flex",
     gap: "40px",
     alignItems: "center",
