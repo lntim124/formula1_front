@@ -92,6 +92,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     marginTop: "20px",
+    
   
   },
 
@@ -124,7 +125,21 @@ homeText: {
   textAlign: "justify", 
   fontFamily: "'Poppins', sans-serif", 
 },
-
+"@media (min-width: 1600px)": {
+  homeContainer: {
+    gap: "80px",
+  },
+  homeImg: {
+    width: "500px",
+  },
+  homeText: {
+    fontSize: "20px",
+    maxWidth: "800px",
+  },
+  homeTitle: {
+    fontSize: "30px",
+  },
+},
 };
 
 
