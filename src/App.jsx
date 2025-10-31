@@ -1,8 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import Welcome from "./pages/Welcome.jsx";
-import Principal from "./pages/Principal.jsx"; // tu dashboard
+
 import "./index.css";
 import "./App.css";
+
+import{Routes,Route} from "react-router-dom";
+import Welcome from "./pages/Welcome";
+import Principal from "./pages/Principal";
 
 function App() {
   return (

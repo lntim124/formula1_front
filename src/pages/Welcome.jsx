@@ -63,7 +63,7 @@ export default function Welcome() {
           </div>
 
           <h1 style={{ fontSize: "56px", lineHeight: "1.05", marginBottom: "10px" }}>
-            BIENVENIDO AL EQUIPO
+            ¡TE DOY LA BIENVENIDA!
           </h1>
 
           <div
@@ -77,8 +77,8 @@ export default function Welcome() {
             }}
           >
             <p style={{ fontSize: "18px", color: "#eaeaea" }}>
-              Te damos la bienvenida a <strong>Red Bull Racing Data System</strong>.
-              ¡Adelante y explora los datos del equipo!
+              Explora <strong>Red Bull Racing Data System</strong>.
+              ¡Adelante los datos del equipo a tu alcance!
             </p>
             <p
               style={{
