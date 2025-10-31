@@ -85,50 +85,70 @@ const styles = {
   },
   clock: { fontVariantNumeric: "tabular-nums" },
 
-
-  homeContainer: {
-    flexWrap: "wrap",
-    display: "flex",
-    gap: "40px",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: "20px",
-    
-  
-  },
-
-  homeImg: {
-    width: "420px",          
-    height: "340",           
-    borderRadius: "12px",
-    border: "1px solid rgba(255,255,255,.15)",
-    objectFit: "cover",    
-    boxShadow: "0 0 25px rgba(0,0,0,0.4)", 
+homeContainer: {
+  display: "flex",
+  flexDirection: "row", // ✅ siempre uno al lado del otro
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "60px",
+  marginTop: "40px",
+  padding: "0 4rem",
+  maxWidth: "1600px",
+  margin: "0 auto",
 },
-  homeTitle: {
+
+homeImg: {
+  width: "420px",
+  height: "auto",
+  borderRadius: "12px",
+  border: "1px solid rgba(255,255,255,.15)",
+  objectFit: "cover",
+  boxShadow: "0 0 25px rgba(0,0,0,0.4)",
+  flexShrink: 0, // ✅ evita que se encoja
+},
+
+homeText: {
+  flex: 1,
+  fontSize: "12px",
+  lineHeight: "1.8",
+  color: "#dce2ee",
+  textAlign: "justify",
+  fontFamily: "'Poppins', sans-serif",
+  maxWidth: "700px",
+},
+
+homeTitle: {
   fontFamily: "'Orbitron', sans-serif",
-  fontSize: "15px",
+  fontSize: "20px",
   fontWeight: 900,
   color: "#ffffff",
   textAlign: "center",
   textTransform: "uppercase",
   letterSpacing: "2px",
-  marginBottom: "20px",
-  width: "100%", 
-  display: "block", 
-  },
-
-homeText: {
-  flex: 1,
-  fontSize: "18px",
-  lineHeight: "1.8",
-  color: "#dce2ee",
-  textAlign: "justify", 
-  fontFamily: "'Poppins', sans-serif", 
+  marginBottom: "25px",
+  width: "100%",
 },
+
+// 📱 Solo en pantallas pequeñas apila vertical
+"@media (max-width: 1024px)": {
+  homeContainer: {
+    flexDirection: "column", // ✅ solo se apilan en pantallas pequeñas
+    padding: "1rem",
+    textAlign: "center",
+  },
+  homeImg: {
+    width: "80%",
+    maxWidth: "350px",
+  },
+  homeText: {
+    maxWidth: "90%",
+  },
+},
+
+// 🖥️ Pantallas grandes
 "@media (min-width: 1600px)": {
   homeContainer: {
-    gap: "80px",
+    gap: "100px",
   },
   homeImg: {
     width: "500px",
@@ -140,10 +160,7 @@ homeText: {
   homeTitle: {
     fontSize: "30px",
   },
-},
-};
-
-
+}}
 
 export default function Principal() {
   const [hora, setHora] = useState("");
