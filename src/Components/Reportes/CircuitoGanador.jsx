@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import CircuitoReportService from "../../Service/CircuitoReportService";
 
-export default function CircuitoGanador() {
+ function CircuitoGanador() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -39,3 +39,4 @@ export default function CircuitoGanador() {
     </div>
   );
 }
+export default CircuitoGanador;

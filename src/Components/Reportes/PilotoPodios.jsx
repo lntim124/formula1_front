@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import PilotoReportService from "../../Service/PilotoReportService";
 
-export default function PilotoPodios(){
+ function PilotoPodios(){
   const [rows, setRows] = useState([]);
 
   useEffect(()=>{
@@ -38,3 +38,4 @@ export default function PilotoPodios(){
     </div>
   );
 }
+export default PilotoPodio;

@@ -3,7 +3,7 @@ import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarAutCir() {
+function AutCir() {
   const navigate = useNavigate();
   const [keys, setKeys] = useState({ idCircuito: "", placa: "" });
   const [form, setForm] = useState({ velocidad: "" });
@@ -67,3 +67,5 @@ export default function EditarAutCir() {
     </div>
   );
 }
+
+export default AutCir;

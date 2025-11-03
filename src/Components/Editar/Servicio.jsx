@@ -3,7 +3,7 @@ import "./Servicio.css";
 import ServicioService from "../../Service/ServicioService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarServicio() {
+function Servicio() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [descripcion, setDescripcion] = useState("");
@@ -57,3 +57,5 @@ export default function EditarServicio() {
     </div>
   );
 }
+export default Servicio;
+

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 
-export default function Especialidad() {
+ function Especialidad() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -40,3 +40,5 @@ export default function Especialidad() {
     </div>
   );
 }
+
+export default Especialidad;

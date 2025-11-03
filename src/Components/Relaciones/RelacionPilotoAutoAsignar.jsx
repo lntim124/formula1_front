@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PilotoService from "../../Service/PilotoService";
 
-export default function RelacionPilotoAutoAsignar() {
+function RelacionPilotoAutoAsignar() {
   const [form, setForm] = useState({ idPiloto: "", placaAuto: "" });
 
   const onChange = (e) => {
@@ -32,3 +32,4 @@ export default function RelacionPilotoAutoAsignar() {
     </div>
   );
 }
+export default RelacionPilotoAutoAsignar;

@@ -3,7 +3,7 @@ import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarCarrera() {
+ function Carrera() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [form, setForm] = useState({ nombre:"", fecha:"", horaInicio:"", horaFin:"", idJefeEquipo:"", idCircuito:"" });
@@ -80,3 +80,4 @@ export default function EditarCarrera() {
     </div>
   );
 }
+export default Carrera;

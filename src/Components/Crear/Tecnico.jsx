@@ -3,7 +3,7 @@ import TecnicoService from "../../Service/TecnicoService";
 import "./Tecnico.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearTecnico = () => {
+const Tecnico = () => {
   const [tecnico, setTecnico] = useState({
     id: "",
     nombre: "",
@@ -71,4 +71,4 @@ const CrearTecnico = () => {
   );
 };
 
-export default CrearTecnico;
+export default Tecnico;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 
-export default function Auto() {
+function Auto() {
   const [placa, setPlaca] = useState("");
   const [data, setData] = useState(null);
 
@@ -43,3 +43,5 @@ export default function Auto() {
     </div>
   );
 }
+
+export default Auto;

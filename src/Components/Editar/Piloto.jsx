@@ -3,7 +3,7 @@ import "./Piloto.css";
 import PilotoService from "../../Service/PilotoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarPiloto() {
+function Piloto() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -60,3 +60,6 @@ export default function EditarPiloto() {
     </div>
   );
 }
+
+export default Piloto;
+

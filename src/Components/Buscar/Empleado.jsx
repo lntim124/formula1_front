@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
 
-export default function Empleado() {
+function Empleado() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -43,3 +43,6 @@ export default function Empleado() {
     </div>
   );
 }
+
+
+export default Empleado;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import TecnicoReportService from "../../Service/TecnicoReportService";
 
-export default function TecnicoRendimiento() {
+ function TecnicoRendimiento() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -37,3 +37,4 @@ export default function TecnicoRendimiento() {
     </div>
   );
 }
+export default TecnicoRendimiento;

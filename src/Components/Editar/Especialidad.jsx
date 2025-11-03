@@ -3,7 +3,7 @@ import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarEspecialidad() {
+ function Especialidad() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -55,3 +55,4 @@ export default function EditarEspecialidad() {
     </div>
   );
 }
+export default Especialidad;

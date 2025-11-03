@@ -3,7 +3,7 @@ import "./Penalizacion.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarPenalizacion() {
+function Penalizacion() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [descripcion, setDescripcion] = useState("");
@@ -60,3 +60,6 @@ export default function EditarPenalizacion() {
     </div>
   );
 }
+
+export default Penalizacion;
+

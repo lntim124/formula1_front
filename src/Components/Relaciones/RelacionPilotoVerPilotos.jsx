@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";              // usa tu css unificado
 import PilotoService from "../../Service/PilotoService";
 
-export default function RelacionPilotoVerPilotos() {
+ function RelacionPilotoVerPilotos() {
   const [placaAuto, setPlacaAuto] = useState("");
   const [pilotos, setPilotos] = useState([]);
 
@@ -46,3 +46,4 @@ export default function RelacionPilotoVerPilotos() {
     </div>
   );
 }
+export default RelacionPilotoVerPilotos;

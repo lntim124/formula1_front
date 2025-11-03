@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import CarreraService from "../../Service/CarreraService";
 
-export default function ListarCarrera() {
+ function Carrera() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -45,3 +45,4 @@ export default function ListarCarrera() {
     </div>
   );
 }
+export default Carrera;

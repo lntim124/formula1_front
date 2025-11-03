@@ -58,4 +58,4 @@ const Motor = () => {
   );
 };
 
-export default BuscarMotor;
+export default Motor;

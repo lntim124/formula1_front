@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 
-export default function RelacionPenalizacionVerPorPiloto() {
+ function RelacionPenalizacionVerPorPiloto() {
   const [idPiloto, setIdPiloto] = useState("");
   const [rows, setRows] = useState([]);
 
@@ -35,3 +35,4 @@ export default function RelacionPenalizacionVerPorPiloto() {
     </div>
   );
 }
+export default RelacionPenalizacionVerPorPiloto;

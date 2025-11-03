@@ -3,7 +3,7 @@ import "./Motor.css";
 import MotorService from "../../Service/MotorService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarMotor() {
+ function Motor() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -65,3 +65,5 @@ export default function EditarMotor() {
     </div>
   );
 }
+export default Motor;
+

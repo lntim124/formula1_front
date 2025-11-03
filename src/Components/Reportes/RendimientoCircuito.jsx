@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import CircuitoReportService from "../../Service/CircuitoReportService";
 
-export default function RendimientoCircuito() {
+ function RendimientoCircuito() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -37,3 +37,4 @@ export default function RendimientoCircuito() {
     </div>
   );
 }
+export default RendimientoCircuito;

@@ -3,7 +3,7 @@ import "./Estado.css";
 import EstadoService from "../../Service/EstadoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarEstado() {
+function Estado() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -55,3 +55,4 @@ export default function EditarEstado() {
     </div>
   );
 }
+export default Estado;

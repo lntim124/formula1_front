@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PilotoService from "../../Service/PilotoService";
 
-export default function RelacionPilotoVerAutos() {
+ function RelacionPilotoVerAutos() {
   const [idPiloto, setIdPiloto] = useState("");
   const [autos, setAutos] = useState([]);
 
@@ -38,3 +38,4 @@ export default function RelacionPilotoVerAutos() {
     </div>
   );
 }
+export default RelacionPilotoVerAutos;

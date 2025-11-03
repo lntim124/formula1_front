@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 
-export default function Carrera() {
+ function Carrera() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -45,3 +45,5 @@ export default function Carrera() {
     </div>
   );
 }
+
+export default Carrera;

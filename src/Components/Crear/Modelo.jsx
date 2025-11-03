@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Modelo.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearModelo = () => {
+const Modelo = () => {
   const [modelo, setModelo] = useState({
     idModelo: "",
     nombre: "",
@@ -85,4 +85,4 @@ const CrearModelo = () => {
   );
 };
 
-export default CrearModelo;
+export default Modelo;

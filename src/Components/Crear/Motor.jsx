@@ -4,7 +4,7 @@ import MotorService from "../../Service/MotorService";
 import "./Motor.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearMotor = () => {
+const Motor = () => {
   const [motor, setMotor] = useState({
     idmotor: "",
     nombre: "",
@@ -60,4 +60,4 @@ const CrearMotor = () => {
   );
 };
 
-export default CrearMotor;
+export default Motor;

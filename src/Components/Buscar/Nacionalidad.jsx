@@ -57,4 +57,4 @@ const Nacionalidad = () => {
   );
 };
 
-export default BuscarNacionalidad;
+export default Nacionalidad;

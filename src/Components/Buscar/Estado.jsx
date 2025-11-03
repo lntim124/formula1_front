@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Estado.css";
 import EstadoService from "../../Service/EstadoService";
 
-export default function Estado() {
+function Estado() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -40,3 +40,5 @@ export default function Estado() {
     </div>
   );
 }
+
+export default Estado;

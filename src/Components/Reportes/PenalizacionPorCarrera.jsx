@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import PenalizacionReportService from "../../Service/PenalizacionReportService";
 
-export default function PenalizacionPorCarrera() {
+ function PenalizacionPorCarrera() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -41,3 +41,4 @@ export default function PenalizacionPorCarrera() {
     </div>
   );
 }
+export default PenalizacionPorCarrera;

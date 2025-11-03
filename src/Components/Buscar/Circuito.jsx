@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 
-export default function Circuito() {
+function Circuito() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -41,3 +41,4 @@ export default function Circuito() {
     </div>
   );
 }
+export default Circuito;

@@ -4,7 +4,7 @@ import MotorService from "../service/MotorService";
 import "./ListarMotor.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarMotor = () => {
+const Motor = () => {
   const [motores, setMotores] = useState([]);
   const navigate = useNavigate();
 
@@ -58,4 +58,4 @@ const ListarMotor = () => {
   );
 };
 
-export default ListarMotor;
+export default Motor;

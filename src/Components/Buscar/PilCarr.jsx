@@ -69,4 +69,4 @@ const PilCarr = () => {
   );
 };
 
-export default BuscarPilCarr;
+export default PilCarr;

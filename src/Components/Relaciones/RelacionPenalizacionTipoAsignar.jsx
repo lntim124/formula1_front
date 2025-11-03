@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 
-export default function RelacionPenalizacionTipoAsignar() {
+ function RelacionPenalizacionTipoAsignar() {
   const [form, setForm] = useState({
     idPenalizacion: "",
     idTipoPenalizacion: "",
@@ -39,3 +39,4 @@ export default function RelacionPenalizacionTipoAsignar() {
     </div>
   );
 }
+export default RelacionPenalizacionTipoAsignar;

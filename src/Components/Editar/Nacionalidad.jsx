@@ -3,7 +3,7 @@ import "./Nacionalidad.css";
 import NacionalidadService from "../../Service/NacionalidadService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarNacionalidad() {
+function Nacionalidad() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -77,4 +77,6 @@ export default function EditarNacionalidad() {
     </div>
   );
 }
+export default Nacionalidad;
+
 

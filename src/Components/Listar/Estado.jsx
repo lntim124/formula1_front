@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import EstadoService from "../../Service/EstadoService";
 
-export default function ListarEstado() {
+function Estado() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -35,3 +35,4 @@ export default function ListarEstado() {
     </div>
   );
 }
+export default Eastado;

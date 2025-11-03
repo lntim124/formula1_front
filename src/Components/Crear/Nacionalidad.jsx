@@ -4,7 +4,7 @@ import NacionalidadService from "../../Service/NacionalidadService";
 import "./Nacionalidad.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearNacionalidad = () => {
+const Nacionalidad = () => {
   const [nacionalidad, setNacionalidad] = useState({
     idNacionalidad: "",
     pais: "",
@@ -74,4 +74,4 @@ const CrearNacionalidad = () => {
   );
 };
 
-export default CrearNacionalidad;
+export default Nacionalidad;

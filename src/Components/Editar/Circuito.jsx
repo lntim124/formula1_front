@@ -3,7 +3,7 @@ import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarCircuito() {
+ function Circuito() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [form, setForm] = useState({ nombre:"", numVueltas:"" });
@@ -64,3 +64,4 @@ export default function EditarCircuito() {
     </div>
   );
 }
+export default Circuito;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 
-export default function ListarEspecialidad() {
+ function Especialidad() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -35,3 +35,4 @@ export default function ListarEspecialidad() {
     </div>
   );
 }
+export default Especialidad;

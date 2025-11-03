@@ -47,4 +47,4 @@ const Piloto = () => {
   );
 };
 
-export default BuscarPiloto;
+export default Piloto;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 
-export default function RelacionPenalizacionPilotoEliminar() {
+ function RelacionPenalizacionPilotoEliminar() {
   const [form, setForm] = useState({ idPiloto: "", idPenalizacion: "" });
   const onChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -25,3 +25,4 @@ export default function RelacionPenalizacionPilotoEliminar() {
     </div>
   );
 }
+export default RelacionPenalizacionPilotoEliminar;

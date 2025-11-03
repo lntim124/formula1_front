@@ -3,7 +3,7 @@ import ServicioService from "../../Service/ServicioService";
 import "./Servicio.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearServicio = () => {
+const Servicio = () => {
   const [servicio, setServicio] = useState({
     idServicio: "",
     descripcion: "",
@@ -61,4 +61,4 @@ const CrearServicio = () => {
   );
 };
 
-export default CrearServicio;
+export default Servicio;

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./Modelo.css";
 import ModeloService from "../../Service/ModeloService";
 import { useNavigate } from "react-router-dom";
-
-export default function EditarModelo() {
+ function Modelo() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -86,3 +85,5 @@ export default function EditarModelo() {
     </div>
   );
 }
+export default Modelo;
+

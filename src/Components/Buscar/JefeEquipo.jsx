@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./JefeEquipo.css";
 import JefeEquipoService from "../../Service/JefeEquipoService";
 
-export default function JefeEquipo() {
+ function JefeEquipo() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 
@@ -40,3 +40,5 @@ export default function JefeEquipo() {
     </div>
   );
 }
+
+export default JefeEquipo;

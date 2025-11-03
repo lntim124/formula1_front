@@ -3,7 +3,7 @@ import { crearTipoPenalizacion } from "../../Service/tipoPenalizacionService";
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearTipoPenalizacion = () => {
+const TipoPenalizacion = () => {
   const [tipo, setTipo] = useState({
     idTipoPenalizacion: "",
     nombre: "",
@@ -71,4 +71,4 @@ const CrearTipoPenalizacion = () => {
   );
 };
 
-export default CrearTipoPenalizacion;
+export default TipoPenalizacion;

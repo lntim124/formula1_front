@@ -4,7 +4,7 @@ import NacionalidadService from "../service/NacionalidadService";
 import "./ListarNacionalidad.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarNacionalidad = () => {
+const Nacionalidad = () => {
   const [nacionalidades, setNacionalidades] = useState([]);
   const navigate = useNavigate();
 
@@ -62,4 +62,4 @@ const ListarNacionalidad = () => {
   );
 };
 
-export default ListarNacionalidad;
+export default Nacionalidad;

@@ -6,7 +6,7 @@ import {
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarTipoPenalizacion = () => {
+const TipoPenalizacion = () => {
   const [tipos, setTipos] = useState([]);
   const navigate = useNavigate();
 
@@ -56,4 +56,4 @@ const ListarTipoPenalizacion = () => {
   );
 };
 
-export default ListarTipoPenalizacion;
+export default TipoPenalizacion;

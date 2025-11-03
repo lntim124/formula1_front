@@ -58,4 +58,4 @@ const Penalizacion = () => {
   );
 };
 
-export default BuscarPenalizacion;
+export default Penalizacion;

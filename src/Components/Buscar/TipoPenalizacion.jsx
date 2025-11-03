@@ -3,7 +3,7 @@ import TipoPenalizacionService from "../../Service/tipoPenalizacionService";
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarTipoPenalizacion = () => {
+const TipoPenalizacion = () => {
   const [id, setId] = useState("");
   const [resultado, setResultado] = useState(null);
   const navigate = useNavigate();
@@ -49,4 +49,4 @@ const BuscarTipoPenalizacion = () => {
   );
 };
 
-export default BuscarTipoPenalizacion;
+export default TipoPenalizacion;

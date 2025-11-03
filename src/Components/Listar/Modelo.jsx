@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ListarModelo.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarModelo = () => {
+const Modelo = () => {
   const [modelos, setModelos] = useState([]);
   const navigate = useNavigate();
 
@@ -69,4 +69,4 @@ const ListarModelo = () => {
   );
 };
 
-export default ListarModelo;
+export default Modelo;

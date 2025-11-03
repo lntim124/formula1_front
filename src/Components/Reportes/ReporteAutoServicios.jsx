@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import AutoReportService from "../../Service/AutoReportService";
 
-export default function ReporteAutoServicios() {
+ function ReporteAutoServicios() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -41,3 +41,4 @@ export default function ReporteAutoServicios() {
     </div>
   );
 }
+export default ReporteAutoServicios;

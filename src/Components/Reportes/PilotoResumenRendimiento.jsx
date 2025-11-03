@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Reportes.css";
+import "./General1.css";
 import PilotoReportService from "../../Service/PilotoReportService";
 
-export default function PilotoResumenRendimiento(){
+ function PilotoResumenRendimiento(){
   const [rows, setRows] = useState([]);
 
   useEffect(()=>{
@@ -37,3 +37,4 @@ export default function PilotoResumenRendimiento(){
     </div>
   );
 }
+export default PilotoResumenRendimiento;

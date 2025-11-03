@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ListarPiloto.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarPiloto = () => {
+const Piloto = () => {
   const [pilotos, setPilotos] = useState([]);
   const navigate = useNavigate();
 
@@ -64,4 +64,4 @@ const ListarPiloto = () => {
   );
 };
 
-export default ListarPiloto;
+export default Piloto;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import TecnicoService from "../../Service/TecnicoService";
 
-export default function RelacionTecnicoVerEspecialidades() {
+function RelacionTecnicoVerEspecialidades() {
   const [idTecnico, setIdTecnico] = useState("");
   const [rows, setRows] = useState([]);
 
@@ -33,3 +33,4 @@ export default function RelacionTecnicoVerEspecialidades() {
     </div>
   );
 }
+export default RelacionTecnicoVerEspecialidades;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import AutTecService from "../../Service/AutTecService";
 
-export default function ListarAutTec() {
+function AutTec() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -41,3 +41,4 @@ export default function ListarAutTec() {
     </div>
   );
 }
+export default AutTec;

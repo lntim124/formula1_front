@@ -3,7 +3,7 @@ import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarAutTec() {
+ function AutTec() {
   const navigate = useNavigate();
   const [keys, setKeys] = useState({ placa: "", idTecnico: "" });
   const [form, setForm] = useState({ idServicio:"", horaEntrada:"", horaSalida:"" });
@@ -85,3 +85,4 @@ export default function EditarAutTec() {
     </div>
   );
 }
+export default AutTec;

@@ -3,7 +3,7 @@ import "./Tecnico.css";
 import TecnicoService from "../../Service/TecnicoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarTecnico() {
+ function Tecnico() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -57,3 +57,6 @@ export default function EditarTecnico() {
     </div>
   );
 }
+
+export default Tecnico;
+

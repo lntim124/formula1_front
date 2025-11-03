@@ -3,7 +3,7 @@ import "./TipoPenalizacion.css";
 import TipoPenalizacionService from "../../Service/tipoPenalizacionService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarTipoPenalizacion() {
+ function TipoPenalizacion() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [nombre, setNombre] = useState("");
@@ -61,3 +61,4 @@ export default function EditarTipoPenalizacion() {
     </div>
   );
 }
+export default TipoPenalizacion;

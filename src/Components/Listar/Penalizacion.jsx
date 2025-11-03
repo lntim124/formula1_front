@@ -3,7 +3,7 @@ import PenalizacionService from "../service/PenalizacionService";
 import "./ListarPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarPenalizacion = () => {
+const Penalizacion = () => {
   const [penalizaciones, setPenalizaciones] = useState([]);
   const navigate = useNavigate();
 
@@ -63,4 +63,4 @@ const ListarPenalizacion = () => {
   );
 };
 
-export default ListarPenalizacion;
+export default Penalizacion;

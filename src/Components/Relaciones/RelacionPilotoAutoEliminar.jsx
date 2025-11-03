@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PilotoService from "../../Service/PilotoService";
 
-export default function RelacionPilotoAutoEliminar() {
+ function RelacionPilotoAutoEliminar() {
   const [form, setForm] = useState({ idPiloto: "", placaAuto: "" });
 
   const onChange = (e) => {
@@ -32,3 +32,4 @@ export default function RelacionPilotoAutoEliminar() {
     </div>
   );
 }
+export default RelacionPilotoAutoEliminar;

@@ -3,7 +3,7 @@ import "./PilCarr.css";
 import PilCarrService from "../../Service/PilCarrService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarPilCarr() {
+function PilCarr() {
   const navigate = useNavigate();
   const [idPiloto, setIdPiloto] = useState("");
   const [idCarrera, setIdCarrera] = useState("");
@@ -64,3 +64,5 @@ export default function EditarPilCarr() {
     </div>
   );
 }
+export default PilCarr;
+

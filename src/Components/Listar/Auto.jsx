@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import AutoService from "../../Service/AutoService";
 
-export default function ListarAuto() {
+ function Auto() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -41,3 +41,4 @@ export default function ListarAuto() {
     </div>
   );
 }
+export default Auto;

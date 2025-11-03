@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./General.css";
 import TecnicoService from "../../Service/TecnicoService";
+import RelacionTecnicoEspecialidadAsignar from "./RelacionTecnicoEspecialidadAsignar";
 
-export default function RelacionTecnicoEspecialidadEliminar() {
+ function RelacionTecnicoEspecialidadEliminar() {
   const [form, setForm] = useState({ idTecnico: "", idEspecialidad: "" });
   const onChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -27,3 +28,4 @@ export default function RelacionTecnicoEspecialidadEliminar() {
     </div>
   );
 }
+export default RelacionTecnicoEspecialidadEliminar;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 
-export default function RelacionPenalizacionVerTipos() {
+ function RelacionPenalizacionVerTipos() {
   const [idPenalizacion, setIdPenalizacion] = useState("");
   const [rows, setRows] = useState([]);
 
@@ -37,3 +37,4 @@ export default function RelacionPenalizacionVerTipos() {
     </div>
   );
 }
+export default RelacionPenalizacionVerTipos;

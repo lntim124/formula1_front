@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import CircuitoService from "../../Service/CircuitoService";
 
-export default function ListarCircuito() {
+function Circuito() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -37,3 +37,4 @@ export default function ListarCircuito() {
     </div>
   );
 }
+export default Circuito;

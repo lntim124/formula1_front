@@ -3,7 +3,7 @@ import TecnicoService from "../service/TecnicoService";
 import "./ListarTecnico.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarTecnico = () => {
+const Tecnico = () => {
   const [tecnicos, setTecnicos] = useState([]);
   const navigate = useNavigate();
 
@@ -48,4 +48,4 @@ const ListarTecnico = () => {
   );
 };
 
-export default ListarTecnico;
+export default Tecnico;

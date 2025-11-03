@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 
-export default function AutCir() {
+function AutCir() {
   const [idCircuito, setIdCircuito] = useState("");
   const [placa, setPlaca] = useState("");
   const [data, setData] = useState(null);
@@ -46,3 +46,5 @@ export default function AutCir() {
     </div>
   );
 }
+
+export default AutCir;

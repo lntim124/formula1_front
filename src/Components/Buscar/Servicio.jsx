@@ -40,4 +40,4 @@ const Servicio = () => {
   );
 };
 
-export default BuscarServicio;
+export default Servicio;

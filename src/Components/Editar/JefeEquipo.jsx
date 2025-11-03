@@ -3,7 +3,7 @@ import "./JefeEquipo.css";
 import JefeEquipoService from "../../Service/JefeEquipoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarJefeEquipo() {
+function JefeEquipo() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [fechaInicio, setFechaInicio] = useState("");
@@ -55,3 +55,4 @@ export default function EditarJefeEquipo() {
     </div>
   );
 }
+export default JefeEquipo;

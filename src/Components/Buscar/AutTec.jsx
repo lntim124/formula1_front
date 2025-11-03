@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 
-export default function AutTec() {
+ function AutTec() {
   const [placa, setPlaca] = useState("");
   const [idTecnico, setIdTecnico] = useState("");
   const [data, setData] = useState(null);
@@ -48,3 +48,4 @@ export default function AutTec() {
     </div>
   );
 }
+export default AutTec;

@@ -3,7 +3,7 @@ import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarEmpleado() {
+function Empleado() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
   const [form, setForm] = useState({ fechaNacimiento:"", primerNombre:"", primerApellido:"", idNacionalidad:"", idEstado:"" });
@@ -75,3 +75,4 @@ export default function EditarEmpleado() {
     </div>
   );
 }
+export default Empleado;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Piloto.css";
 
-const CrearPiloto = () => {
+const Piloto = () => {
   const [piloto, setPiloto] = useState({
     id: "",
     nombre: "",
@@ -47,4 +47,4 @@ const CrearPiloto = () => {
   );
 };
 
-export default CrearPiloto;
+export default Piloto;

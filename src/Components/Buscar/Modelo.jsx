@@ -63,4 +63,4 @@ const Modelo = () => {
   );
 };
 
-export default BuscarModelo;
+export default Modelo;

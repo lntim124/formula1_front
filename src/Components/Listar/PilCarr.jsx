@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ListarPilCarr.css";
 import { useNavigate } from "react-router-dom";
 
-const ListarPilCarr = () => {
+const PilCarr = () => {
   const [pilCarrList, setPilCarrList] = useState([]);
   const navigate = useNavigate();
 
@@ -67,4 +67,4 @@ const ListarPilCarr = () => {
   );
 };
 
-export default ListarPilCarr;
+export default PilCarr;

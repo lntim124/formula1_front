@@ -3,7 +3,7 @@ import axios from "axios";
 import "./PilCarr.css";
 import { useNavigate } from "react-router-dom";
 
-const CrearPilCarr = () => {
+const PilCarr = () => {
   const [formData, setFormData] = useState({
     idPiloto: "",
     idCarrera: "",
@@ -86,4 +86,4 @@ const CrearPilCarr = () => {
   );
 };
 
-export default CrearPilCarr;
+export default PilCarr;

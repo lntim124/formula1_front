@@ -3,7 +3,7 @@ import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EditarAuto() {
+ function Auto() {
   const navigate = useNavigate();
   const [placa, setPlaca] = useState("");
   const [form, setForm] = useState({ numeroChasis:"", idMotor:"", fechaEstreno:"", idModelo:"" });
@@ -84,3 +84,4 @@ export default function EditarAuto() {
     </div>
   );
 }
+export default Auto;

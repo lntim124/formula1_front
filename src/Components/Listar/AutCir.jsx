@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Listar.css";
 import AutCirService from "../../Service/AutCirService";
 
-export default function ListarAutCir() {
+function AutCir() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -37,3 +37,4 @@ export default function ListarAutCir() {
     </div>
   );
 }
+export default AutCir;

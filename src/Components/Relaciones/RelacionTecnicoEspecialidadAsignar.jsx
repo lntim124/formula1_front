@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./General.css";
 import TecnicoService from "../../Service/TecnicoService";
 
-export default function RelacionTecnicoEspecialidadAsignar() {
+ function RelacionTecnicoEspecialidadAsignar() {
   const [form, setForm] = useState({ idTecnico: "", idEspecialidad: "" });
   const onChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -27,3 +27,4 @@ export default function RelacionTecnicoEspecialidadAsignar() {
     </div>
   );
 }
+export default RelacionTecnicoEspecialidadAsignar;
