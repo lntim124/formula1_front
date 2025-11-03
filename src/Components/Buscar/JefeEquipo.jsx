@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./JefeEquipo.css";
 import JefeEquipoService from "../../Service/JefeEquipoService";
 
-export default function BuscarJefeEquipo() {
+export default function JefeEquipo() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 

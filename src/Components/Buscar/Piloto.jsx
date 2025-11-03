@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./BuscarPiloto.css";
+import "./Piloto.css";
 
-const BuscarPiloto = () => {
+const Piloto = () => {
   const [id, setId] = useState("");
   const [piloto, setPiloto] = useState(null);
   const [error, setError] = useState("");

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 
-export default function BuscarAuto() {
+export default function Auto() {
   const [placa, setPlaca] = useState("");
   const [data, setData] = useState(null);
 

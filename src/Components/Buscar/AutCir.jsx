@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 
-export default function BuscarAutCir() {
+export default function AutCir() {
   const [idCircuito, setIdCircuito] = useState("");
   const [placa, setPlaca] = useState("");
   const [data, setData] = useState(null);

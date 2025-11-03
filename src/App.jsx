@@ -87,6 +87,26 @@ import BuscarServicio from "./Components/Buscar/Servicio.jsx";
 import BuscarTecnico from "./Components/Buscar/Tecnico.jsx";
 import BuscarTipoPenalizacion from "./Components/Buscar/TipoPenalizacion.jsx";
 
+//RELACIONES
+
+import RelacionPilotoAutoAsignar from "./Components/Relaciones/RelacionPilotoAutoAsignar";
+import RelacionPilotoAutoEliminar from "./Components/Relaciones/RelacionPilotoAutoEliminar";
+import RelacionPilotoVerAutos from "./Components/Relaciones/RelacionPilotoVerAutos";
+import RelacionPilotoVerPilotos from "./Components/Relaciones/RelacionPilotoVerPilotos";
+import RelacionTecnicoEspecialidadAsignar from "./Components/Relaciones/RelacionTecnicoEspecialidadAsignar";
+import RelacionTecnicoEspecialidadEliminar from "./Components/Relaciones/RelacionTecnicoEspecialidadEliminar";
+import RelacionTecnicoVerEspecialidades from "./Components/Relaciones/RelacionTecnicoVerEspecialidades";
+import RelacionPenalizacionPilotoAsignar from "./Components/Relaciones/RelacionPenalizacionPilotoAsignar";
+import RelacionPenalizacionPilotoEliminar from "./Components/Relaciones/RelacionPenalizacionPilotoEliminar";
+import RelacionPenalizacionVerPorPiloto from "./Components/Relaciones/RelacionPenalizacionVerPorPiloto";
+import RelacionPenalizacionCarreraAsignar from "./Components/Relaciones/RelacionPenalizacionCarreraAsignar";
+import RelacionPenalizacionCarreraEliminar from "./Components/Relaciones/RelacionPenalizacionCarreraEliminar";
+import RelacionPenalizacionVerPorCarrera from "./Components/Relaciones/RelacionPenalizacionVerPorCarrera";
+import RelacionPenalizacionTipoAsignar from "./Components/Relaciones/RelacionPenalizacionTipoAsignar";
+import RelacionPenalizacionTipoEliminar from "./Components/Relaciones/RelacionPenalizacionTipoEliminar";
+import RelacionPenalizacionVerTipos from "./Components/Relaciones/RelacionPenalizacionVerTipos";
+
+
 function App() {
   return (
     <Routes>
@@ -173,6 +193,31 @@ function App() {
       <Route path="/buscar-servicio" element={<BuscarServicio />} />
       <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
       <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
+
+      <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />
+      <Route path="/piloto-eliminar-auto" element={<RelacionPilotoAutoEliminar />} />
+      <Route path="/piloto-ver-autos" element={<RelacionPilotoVerAutos />} />
+      <Route path="/piloto-ver-pilotos" element={<RelacionPilotoVerPilotos />} />
+
+        {/* Técnico ↔ Especialidad */}
+        <Route path="/tecnico-asignar-especialidad" element={<RelacionTecnicoEspecialidadAsignar />} />
+        <Route path="/tecnico-eliminar-especialidad" element={<RelacionTecnicoEspecialidadEliminar />} />
+        <Route path="/tecnico-ver-especialidades" element={<RelacionTecnicoVerEspecialidades />} />
+
+        {/* Penalización ↔ Piloto */}
+        <Route path="/penalizacion-asignar-piloto" element={<RelacionPenalizacionPilotoAsignar />} />
+        <Route path="/penalizacion-eliminar-piloto" element={<RelacionPenalizacionPilotoEliminar />} />
+        <Route path="/penalizacion-ver-por-piloto" element={<RelacionPenalizacionVerPorPiloto />} />
+
+        {/* Penalización ↔ Carrera */}
+        <Route path="/penalizacion-asignar-carrera" element={<RelacionPenalizacionCarreraAsignar />} />
+        <Route path="/penalizacion-eliminar-carrera" element={<RelacionPenalizacionCarreraEliminar />} />
+        <Route path="/penalizacion-ver-por-carrera" element={<RelacionPenalizacionVerPorCarrera />} />
+
+        {/* Penalización ↔ Tipo */}
+        <Route path="/penalizacion-asignar-tipo" element={<RelacionPenalizacionTipoAsignar />} />
+        <Route path="/penalizacion-quitar-tipo" element={<RelacionPenalizacionTipoEliminar />} />
+        <Route path="/penalizacion-ver-tipos" element={<RelacionPenalizacionVerTipos />} />
     </Routes>
   );
 }

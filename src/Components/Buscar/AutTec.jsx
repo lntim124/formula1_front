@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 
-export default function BuscarAutTec() {
+export default function AutTec() {
   const [placa, setPlaca] = useState("");
   const [idTecnico, setIdTecnico] = useState("");
   const [data, setData] = useState(null);

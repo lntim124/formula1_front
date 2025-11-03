@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { buscarTipoPenalizacion } from "../service/tipoPenalizacionService";
-import "./BuscarTipoPenalizacion.css";
+import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarTipoPenalizacion = () => {
+const TipoPenalizacion = () => {
   const [id, setId] = useState("");
   const [resultado, setResultado] = useState(null);
   const navigate = useNavigate();

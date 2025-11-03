@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./BuscarPilCarr.css";
+import "./PilCarr.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarPilCarr = () => {
+const PilCarr = () => {
   const [idPiloto, setIdPiloto] = useState("");
   const [idCarrera, setIdCarrera] = useState("");
   const [resultado, setResultado] = useState(null);

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarAutCir() {
+export default function AutCir() {
   const navigate = useNavigate();
   const [idCircuito, setIdCircuito] = useState("");
   const [placa, setPlaca] = useState("");

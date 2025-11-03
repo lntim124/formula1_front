@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 
-export default function BuscarCarrera() {
+export default function Carrera() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./Estado.css";
 import EstadoService from "../../Service/EstadoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarEstado() {
+export default function Estado() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
 

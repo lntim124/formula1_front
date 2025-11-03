@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarAutTec() {
+export default function AutTec() {
   const navigate = useNavigate();
   const [placa, setPlaca] = useState("");
   const [idTecnico, setIdTecnico] = useState("");

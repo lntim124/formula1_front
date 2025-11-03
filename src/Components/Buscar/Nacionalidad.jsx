@@ -1,10 +1,10 @@
 // src/components/BuscarNacionalidad.js
 import React, { useState } from "react";
 import NacionalidadService from "../service/NacionalidadService";
-import "./BuscarNacionalidad.css";
+import "./Nacionalidad.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarNacionalidad = () => {
+const Nacionalidad = () => {
   const [idNacionalidad, setIdNacionalidad] = useState("");
   const [nacionalidad, setNacionalidad] = useState(null);
   const navigate = useNavigate();

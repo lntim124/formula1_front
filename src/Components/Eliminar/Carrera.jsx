@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarCarrera() {
+export default function Carrera() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
 
