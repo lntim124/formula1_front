@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   listarTipoPenalizaciones,
   eliminarTipoPenalizacion,
-} from "../service/tipoPenalizacionService";
+} from "../../Service/TipoPenalizacionService";
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ServicioService from "../service/ServicioService";
+import ServicioService from "../../Service/ServicioService";
 import "./Servicio.css";
 import { useNavigate } from "react-router-dom";
 

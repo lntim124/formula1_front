@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import MotorService from "../service/MotorService";
+import MotorService from "../../Service/MotorService";
 import "./Motor.css";
 import { useNavigate } from "react-router-dom";
 
