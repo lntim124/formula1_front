@@ -104,75 +104,75 @@ function App() {
       <Route path="/crear-especialidad" element={<Especialidad />} />
       <Route path="/crear-estado" element={<Estado />} />
       <Route path="/crear-jefeequipo" element={<JefeEquipo />} />
-      <Route path="/crear-modelo" element={<CrearModelo />} />
-      <Route path="/crear-motor" element={<CrearMotor />} />
-      <Route path="/crear-nacionalidad" element={<CrearNacionalidad />} />
-      <Route path="/crear-penalizacion" element={<CrearPenalizacion />} />
-      <Route path="/crear-pilcarr" element={<CrearPilCarr />} />
-      <Route path="/crear-piloto" element={<CrearPiloto />} />
-      <Route path="/crear-servicio" element={<CrearServicio />} />
-      <Route path="/crear-tecnico" element={<CrearTecnico />} />
-      <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />
+      <Route path="/crear-modelo" element={<Modelo />} />
+      <Route path="/crear-motor" element={<Motor />} />
+      <Route path="/crear-nacionalidad" element={<Nacionalidad />} />
+      <Route path="/crear-penalizacion" element={<Penalizacion />} />
+      <Route path="/crear-pilcarr" element={<PilCarr />} />
+      <Route path="/crear-piloto" element={<Piloto />} />
+      <Route path="/crear-servicio" element={<Servicio />} />
+      <Route path="/crear-tecnico" element={<Tecnico />} />
+      <Route path="/crear-tipo-penalizacion" element={<TipoPenalizacion />} />
 
       {/* Editar */}
-      <Route path="/editar-autcir" element={<EditarAutCir />} />
-      <Route path="/editar-auttec" element={<EditarAutTec />} />
-      <Route path="/editar-auto" element={<EditarAuto />} />
-      <Route path="/editar-carrera" element={<EditarCarrera />} />
-      <Route path="/editar-circuito" element={<EditarCircuito />} />
-      <Route path="/editar-empleado" element={<EditarEmpleado />} />
-      <Route path="/editar-especialidad" element={<EditarEspecialidad />} />
-      <Route path="/editar-estado" element={<EditarEstado />} />
-      <Route path="/editar-jefeequipo" element={<EditarJefeEquipo />} />
-      <Route path="/editar-modelo" element={<EditarModelo />} />
-      <Route path="/editar-motor" element={<EditarMotor />} />
-      <Route path="/editar-nacionalidad" element={<EditarNacionalidad />} />
-      <Route path="/editar-penalizacion" element={<EditarPenalizacion />} />
-      <Route path="/editar-pilcarr" element={<EditarPilCarr />} />
-      <Route path="/editar-piloto" element={<EditarPiloto />} />
-      <Route path="/editar-servicio" element={<EditarServicio />} />
-      <Route path="/editar-tecnico" element={<EditarTecnico />} />
-      <Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />
+      <Route path="/editar-autcir" element={<AutCir />} />
+      <Route path="/editar-auttec" element={<AutTec />} />
+      <Route path="/editar-auto" element={<Auto />} />
+      <Route path="/editar-carrera" element={<Carrera />} />
+      <Route path="/editar-circuito" element={<Circuito />} />
+      <Route path="/editar-empleado" element={<Empleado />} />
+      <Route path="/editar-especialidad" element={<Especialidad />} />
+      <Route path="/editar-estado" element={<Estado />} />
+      <Route path="/editar-jefeequipo" element={<JefeEquipo />} />
+      <Route path="/editar-modelo" element={<Modelo />} />
+      <Route path="/editar-motor" element={<Motor />} />
+      <Route path="/editar-nacionalidad" element={<Nacionalidad />} />
+      <Route path="/editar-penalizacion" element={<Penalizacion />} />
+      <Route path="/editar-pilcarr" element={<PilCarr />} />
+      <Route path="/editar-piloto" element={<Piloto />} />
+      <Route path="/editar-servicio" element={<Servicio />} />
+      <Route path="/editar-tecnico" element={<Tecnico />} />
+      <Route path="/editar-tipo-penalizacion" element={<TipoPenalizacion />} />
 
       {/* Eliminar */}
-      <Route path="/eliminar-autcir" element={<EliminarAutCir />} />
-      <Route path="/eliminar-auttec" element={<EliminarAutTec />} />
-      <Route path="/eliminar-auto" element={<EliminarAuto />} />
-      <Route path="/eliminar-carrera" element={<EliminarCarrera />} />
+      <Route path="/eliminar-autcir" element={<AutCir />} />
+      <Route path="/eliminar-auttec" element={<AutTec />} />
+      <Route path="/eliminar-auto" element={<Auto />} />
+      <Route path="/eliminar-carrera" element={<Carrera />} />
       <Route path="/eliminar-circuito" element={<EliminarCircuito />} />
-      <Route path="/eliminar-empleado" element={<EliminarEmpleado />} />
-      <Route path="/eliminar-especialidad" element={<EliminarEspecialidad />} />
-      <Route path="/eliminar-estado" element={<EliminarEstado />} />
-      <Route path="/eliminar-jefeequipo" element={<EliminarJefeEquipo />} />
-      <Route path="/eliminar-modelo" element={<EliminarModelo />} />
-      <Route path="/eliminar-motor" element={<EliminarMotor />} />
-      <Route path="/eliminar-nacionalidad" element={<EliminarNacionalidad />} />
-      <Route path="/eliminar-penalizacion" element={<EliminarPenalizacion />} />
-      <Route path="/eliminar-pilcarr" element={<EliminarPilCarr />} />
-      <Route path="/eliminar-piloto" element={<EliminarPiloto />} />
-      <Route path="/eliminar-servicio" element={<EliminarServicio />} />
-      <Route path="/eliminar-tecnico" element={<EliminarTecnico />} />
-      <Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />
+      <Route path="/eliminar-empleado" element={<Empleado />} />
+      <Route path="/eliminar-especialidad" element={<Especialidad />} />
+      <Route path="/eliminar-estado" element={<Estado />} />
+      <Route path="/eliminar-jefeequipo" element={<JefeEquipo />} />
+      <Route path="/eliminar-modelo" element={<Modelo />} />
+      <Route path="/eliminar-motor" element={<Motor />} />
+      <Route path="/eliminar-nacionalidad" element={<Nacionalidad />} />
+      <Route path="/eliminar-penalizacion" element={<Penalizacion />} />
+      <Route path="/eliminar-pilcarr" element={<PilCarr />} />
+      <Route path="/eliminar-piloto" element={<Piloto />} />
+      <Route path="/eliminar-servicio" element={<Servicio />} />
+      <Route path="/eliminar-tecnico" element={<Tecnico />} />
+      <Route path="/eliminar-tipo-penalizacion" element={<TipoPenalizacion />} />
 
       {/* Buscar */}
-      <Route path="/buscar-autcir" element={<BuscarAutCir />} />
-      <Route path="/buscar-auttec" element={<BuscarAutTec />} />
-      <Route path="/buscar-auto" element={<BuscarAuto />} />
-      <Route path="/buscar-carrera" element={<BuscarCarrera />} />
-      <Route path="/buscar-circuito" element={<BuscarCircuito />} />
-      <Route path="/buscar-empleado" element={<BuscarEmpleado />} />
-      <Route path="/buscar-especialidad" element={<BuscarEspecialidad />} />
-      <Route path="/buscar-estado" element={<BuscarEstado />} />
-      <Route path="/buscar-jefeequipo" element={<BuscarJefeEquipo />} />
-      <Route path="/buscar-modelo" element={<BuscarModelo />} />
-      <Route path="/buscar-motor" element={<BuscarMotor />} />
-      <Route path="/buscar-nacionalidad" element={<BuscarNacionalidad />} />
-      <Route path="/buscar-penalizacion" element={<BuscarPenalizacion />} />
-      <Route path="/buscar-pilcarr" element={<BuscarPilCarr />} />
-      <Route path="/buscar-piloto" element={<BuscarPiloto />} />
-      <Route path="/buscar-servicio" element={<BuscarServicio />} />
-      <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
-      <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
+      <Route path="/buscar-autcir" element={<AutCir />} />
+      <Route path="/buscar-auttec" element={<AutTec />} />
+      <Route path="/buscar-auto" element={<Auto />} />
+      <Route path="/buscar-carrera" element={<Carrera />} />
+      <Route path="/buscar-circuito" element={<Circuito />} />
+      <Route path="/buscar-empleado" element={<Empleado />} />
+      <Route path="/buscar-especialidad" element={<Especialidad />} />
+      <Route path="/buscar-estado" element={<Estado />} />
+      <Route path="/buscar-jefeequipo" element={<JefeEquipo />} />
+      <Route path="/buscar-modelo" element={<Modelo />} />
+      <Route path="/buscar-motor" element={<Motor />} />
+      <Route path="/buscar-nacionalidad" element={<Nacionalidad />} />
+      <Route path="/buscar-penalizacion" element={<Penalizacion />} />
+      <Route path="/buscar-pilcarr" element={<PilCarr />} />
+      <Route path="/buscar-piloto" element={<Piloto />} />
+      <Route path="/buscar-servicio" element={<Servicio />} />
+      <Route path="/buscar-tecnico" element={<Tecnico />} />
+      <Route path="/buscar-tipo-penalizacion" element={<TipoPenalizacion />} />
     </Routes>
   );
 }
