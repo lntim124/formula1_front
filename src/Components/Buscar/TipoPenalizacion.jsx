@@ -1,25 +1,31 @@
 import React, { useState } from "react";
-import { buscarTipoPenalizacion } from "../../Service/tipoPenalizacionService";
-
+import TipoPenalizacionService from "../../Service/tipoPenalizacionService";  
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const TipoPenalizacion = () => {
+const BuscarTipoPenalizacion = () => {
   const [id, setId] = useState("");
   const [resultado, setResultado] = useState(null);
   const navigate = useNavigate();
 
   const handleBuscar = async (e) => {
     e.preventDefault();
-    const data = await buscarTipoPenalizacion(id);
-    setResultado(data);
+    try {
+      const res = await TipoPenalizacionService.getTipoPenalizacionById(Number(id));
+      setResultado(res.data || null);
+    } catch (err) {
+      console.error(err);
+      setResultado(null);
+      alert("No se encontró el Tipo de Penalización");
+    }
   };
 
-  const volver = () => navigate("/listar-tipo-penalizacion");
+  const volver = () => navigate("/listar-tipo-penalizacion"); // tu ruta
 
   return (
     <div className="buscar-tipo-container">
       <h2>Buscar Tipo de Penalización</h2>
+
       <form onSubmit={handleBuscar} className="form-buscar">
         <input
           type="number"
@@ -29,9 +35,7 @@ const TipoPenalizacion = () => {
           required
         />
         <button type="submit">Buscar</button>
-        <button type="button" onClick={volver}>
-          Volver
-        </button>
+        <button type="button" onClick={volver}>Volver</button>
       </form>
 
       {resultado && (
@@ -45,4 +49,4 @@ const TipoPenalizacion = () => {
   );
 };
 
-export default TipoPenalizacion;
+export default BuscarTipoPenalizacion;

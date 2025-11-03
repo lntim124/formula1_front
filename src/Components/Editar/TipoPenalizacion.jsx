@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TipoPenalizacion.css";
-import TipoPenalizacionService from "../../Service/TipoPenalizacionService";
+import TipoPenalizacionService from "../../Service/tipoPenalizacionService";
 import { useNavigate } from "react-router-dom";
 
 export default function EditarTipoPenalizacion() {
