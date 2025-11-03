@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarCircuito() {
+export default function Circuito() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
 

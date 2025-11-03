@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./Estado.css";
 import EstadoService from "../../Service/EstadoService";
 
-export default function BuscarEstado() {
+export default function Estado() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 

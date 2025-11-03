@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import TecnicoService from "../service/TecnicoService";
-import "./BuscarTecnico.css";
+import "./Tecnico.css";
 
-const BuscarTecnico = () => {
+const Tecnico = () => {
   const [id, setId] = useState("");
   const [tecnico, setTecnico] = useState(null);
 

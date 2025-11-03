@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 
-export default function BuscarCircuito() {
+export default function Circuito() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 

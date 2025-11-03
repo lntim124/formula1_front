@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Eliminar.css";
+import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 import { useNavigate } from "react-router-dom";
 
-export default function EliminarEspecialidad() {
+export default function Especialidad() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
 

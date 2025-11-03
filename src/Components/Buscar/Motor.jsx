@@ -1,10 +1,10 @@
 // src/components/BuscarMotor.js
 import React, { useState } from "react";
 import MotorService from "../service/MotorService";
-import "./BuscarMotor.css";
+import "./Motor.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarMotor = () => {
+const Motor = () => {
   const [idmotor, setIdmotor] = useState("");
   const [motor, setMotor] = useState(null);
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const BuscarMotor = () => {
         setMotor(response.data);
       })
       .catch(() => {
-        alert("Motor no encontrado");
+        alert(" Motor no encontrado");
         setMotor(null);
       });
   };

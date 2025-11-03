@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./BuscarModelo.css";
+import "./Modelo.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const BuscarModelo = () => {
+const Modelo = () => {
   const [id, setId] = useState("");
   const [modelo, setModelo] = useState(null);
   const [error, setError] = useState("");

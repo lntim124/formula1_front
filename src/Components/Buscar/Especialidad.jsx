@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Buscar.css";
+import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 
-export default function BuscarEspecialidad() {
+export default function Especialidad() {
   const [id, setId] = useState("");
   const [data, setData] = useState(null);
 

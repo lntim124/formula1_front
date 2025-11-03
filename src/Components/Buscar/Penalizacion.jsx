@@ -1,10 +1,10 @@
 
 import React, { useState } from "react";
 import PenalizacionService from "../service/PenalizacionService";
-import "./BuscarPenalizacion.css";
+import "./Penalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const BuscarPenalizacion = () => {
+const Penalizacion = () => {
   const [idPenalizacion, setIdPenalizacion] = useState("");
   const [penalizacion, setPenalizacion] = useState(null);
   const navigate = useNavigate();
