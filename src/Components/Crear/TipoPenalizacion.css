@@ -1,0 +1,44 @@
+.crear-tipo-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-crear-tipo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-crear-tipo label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-crear-tipo input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}

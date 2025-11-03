@@ -1,0 +1,74 @@
+.listar-piloto-container {
+  background-color: #f7f9fc;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 950px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.listar-piloto-container h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #8cb3d9;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.tabla-pilotos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tabla-pilotos th,
+.tabla-pilotos td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.tabla-pilotos th {
+  background-color: #8cb3d9;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla-pilotos tr:nth-child(even) {
+  background-color: #f2f6fa;
+}
+
+.tabla-pilotos tr:hover {
+  background-color: #e6f0fa;
+  transition: 0.3s;
+}
+
+.btn-eliminar,
+.btn-editar {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.btn-editar {
+  background-color: #4a90e2;
+}
+
+.btn-eliminar {
+  background-color: #e74c3c;
+}
+
+.btn-editar:hover {
+  background-color: #357abd;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}

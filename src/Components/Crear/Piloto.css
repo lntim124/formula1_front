@@ -1,0 +1,52 @@
+.crear-piloto-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.crear-piloto-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.form-crear {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-crear label {
+  text-align: left;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-crear input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-crear button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.form-crear button:hover {
+  background-color: #0056b3;
+}

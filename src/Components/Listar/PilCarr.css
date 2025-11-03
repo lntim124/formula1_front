@@ -1,0 +1,65 @@
+.listar-pilcarr-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.listar-pilcarr-container h2 {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 0 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.tabla-pilcarr {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-pilcarr th,
+.tabla-pilcarr td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.tabla-pilcarr th {
+  background-color: #007bff;
+  color: white;
+}
+
+.tabla-pilcarr tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.tabla-pilcarr tr:hover {
+  background-color: #e8f0ff;
+}

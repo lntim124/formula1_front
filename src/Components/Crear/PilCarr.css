@@ -1,0 +1,61 @@
+.crear-pilcarr-container {
+  max-width: 420px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.form-pilcarr {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-pilcarr label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-pilcarr input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0051a3;
+}
+
+.mensaje {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.volver-btn {
+  background-color: #777;
+  margin-top: 10px;
+}
+
+.volver-btn:hover {
+  background-color: #555;
+}
