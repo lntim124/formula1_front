@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
 
 export default function ListarEmpleado() {

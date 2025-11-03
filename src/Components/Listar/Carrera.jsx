@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 
 export default function ListarCarrera() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TecnicoService from "../service/TecnicoService";
-import "./ListarTecnico.css";
+import "./Tecnico.css";
 import { useNavigate } from "react-router-dom";
 
 const ListarTecnico = () => {

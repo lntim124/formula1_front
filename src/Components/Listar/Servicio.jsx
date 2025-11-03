@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ServicioService from "../service/ServicioService";
-import "./ListarServicio.css";
+import "./Servicio.css";
 import { useNavigate } from "react-router-dom";
 
 const ListarServicio = () => {

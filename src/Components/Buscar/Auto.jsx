@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 
-export default function Auto() {
+function Auto() {
   const [placa, setPlaca] = useState("");
   const [data, setData] = useState(null);
 
@@ -22,7 +22,7 @@ export default function Auto() {
       <div className="row">
         <div>
           <label>Placa</label>
-          <input value={placa} onChange={e=>setPlaca(e.target.value)} />
+          <input value={placa} onChange={e => setPlaca(e.target.value)} />
         </div>
       </div>
       <div className="buttons">
@@ -43,3 +43,5 @@ export default function Auto() {
     </div>
   );
 }
+
+export default Auto;

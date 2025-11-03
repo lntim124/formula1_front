@@ -1,7 +1,7 @@
-// src/components/ListarMotor.js
+
 import React, { useEffect, useState } from "react";
 import MotorService from "../service/MotorService";
-import "./ListarMotor.css";
+import "./Motor.css";
 import { useNavigate } from "react-router-dom";
 
 const ListarMotor = () => {

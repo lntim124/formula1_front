@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 
 export default function ListarEspecialidad() {

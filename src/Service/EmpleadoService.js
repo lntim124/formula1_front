@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const EMPLEADO_BASE_URL = "http://localhost:8081/empleado";
+const EMPLEADO_BASE_URL = "http://localhost:8080/empleado";
 
 class EmpleadoService {
   // Listar empleados

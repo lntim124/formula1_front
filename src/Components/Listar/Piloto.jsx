@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./ListarPiloto.css";
+import "./Piloto.css";
 import { useNavigate } from "react-router-dom";
 
 const ListarPiloto = () => {
