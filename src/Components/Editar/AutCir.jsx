@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Editar.css";
+import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 import { useNavigate } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TecnicoService from "../service/TecnicoService";
+import TecnicoService from "../../Service/TecnicoService";
 import "./Tecnico.css";
 
 const Tecnico = () => {
@@ -41,4 +41,4 @@ const Tecnico = () => {
   );
 };
 
-export default BuscarTecnico;
+export default Tecnico;

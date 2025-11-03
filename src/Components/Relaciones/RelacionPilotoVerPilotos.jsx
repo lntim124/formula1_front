@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Relaciones/General.css";              // usa tu css unificado
+import "./General.css";              // usa tu css unificado
 import PilotoService from "../../Service/PilotoService";
 
 export default function RelacionPilotoVerPilotos() {

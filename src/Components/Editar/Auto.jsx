@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Editar.css";
+import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 import { useNavigate } from "react-router-dom";
 

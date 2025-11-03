@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ServicioService from "../service/ServicioService";
+import ServicioService from "../../Service/ServicioService";
 import "./Servicio.css";
 
 const Servicio = () => {

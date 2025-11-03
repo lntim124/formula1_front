@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EditarPiloto.css";
+import "./Piloto.css";
 import PilotoService from "../../Service/PilotoService";
 import { useNavigate } from "react-router-dom";
 

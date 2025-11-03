@@ -1,7 +1,7 @@
 // src/components/CrearMotor.js
 import React, { useState } from "react";
-import MotorService from "../service/MotorService";
-import "./CrearMotor.css";
+import MotorService from "../../Service/MotorService";
+import "./Motor.css";
 import { useNavigate } from "react-router-dom";
 
 const CrearMotor = () => {

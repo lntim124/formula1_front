@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Relaciones/General.css";
+import "./General.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 
 export default function RelacionPenalizacionVerPorPiloto() {

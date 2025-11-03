@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./CrearModelo.css";
+import "./Modelo.css";
 import { useNavigate } from "react-router-dom";
 
 const CrearModelo = () => {

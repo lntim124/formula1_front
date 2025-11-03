@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EditarMotor.css";
+import "./Motor.css";
 import MotorService from "../../Service/MotorService";
 import { useNavigate } from "react-router-dom";
 

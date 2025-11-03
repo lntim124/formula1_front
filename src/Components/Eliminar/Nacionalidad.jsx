@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EliminarNacionalidad.css";
+import "./Nacionalidad.css";
 import NacionalidadService from "../../Service/NacionalidadService";
 import { useNavigate } from "react-router-dom";
 

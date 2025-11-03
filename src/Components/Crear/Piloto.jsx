@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./CrearPiloto.css";
+import "./Piloto.css";
 
 const CrearPiloto = () => {
   const [piloto, setPiloto] = useState({

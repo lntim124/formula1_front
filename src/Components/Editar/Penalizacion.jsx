@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EditarPenalizacion.css";
+import "./Penalizacion.css";
 import PenalizacionService from "../../Service/PenalizacionService";
 import { useNavigate } from "react-router-dom";
 

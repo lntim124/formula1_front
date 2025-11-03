@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EditarPilCarr.css";
+import "./PilCarr.css";
 import PilCarrService from "../../Service/PilCarrService";
 import { useNavigate } from "react-router-dom";
 

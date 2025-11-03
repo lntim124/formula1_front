@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Editar.css";
+import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
 import { useNavigate } from "react-router-dom";
 

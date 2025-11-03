@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { buscarTipoPenalizacion } from "../service/tipoPenalizacionService";
+import { buscarTipoPenalizacion } from "../../Service/tipoPenalizacionService";
+
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
@@ -44,4 +45,4 @@ const TipoPenalizacion = () => {
   );
 };
 
-export default BuscarTipoPenalizacion;
+export default TipoPenalizacion;

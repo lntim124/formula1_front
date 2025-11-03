@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Editar.css";
+import "./Especialidad.css";
 import EspecialidadService from "../../Service/EspecialidadService";
 import { useNavigate } from "react-router-dom";
 

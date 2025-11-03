@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Editar.css";
+import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 import { useNavigate } from "react-router-dom";
 

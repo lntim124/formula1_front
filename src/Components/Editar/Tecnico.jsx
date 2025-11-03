@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./EditarTecnico.css";
+import "./Tecnico.css";
 import TecnicoService from "../../Service/TecnicoService";
 import { useNavigate } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ServicioService from "../service/ServicioService";
-import "./CrearServicio.css";
+import ServicioService from "../../Service/ServicioService";
+import "./Servicio.css";
 import { useNavigate } from "react-router-dom";
 
 const CrearServicio = () => {

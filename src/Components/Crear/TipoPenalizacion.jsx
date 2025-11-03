@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { crearTipoPenalizacion } from "../service/tipoPenalizacionService";
-import "./CrearTipoPenalizacion.css";
+import { crearTipoPenalizacion } from "../../Service/tipoPenalizacionService";
+import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
 const CrearTipoPenalizacion = () => {

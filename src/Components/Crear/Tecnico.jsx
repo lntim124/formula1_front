@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TecnicoService from "../service/TecnicoService";
-import "./CrearTecnico.css";
+import TecnicoService from "../../Service/TecnicoService";
+import "./Tecnico.css";
 import { useNavigate } from "react-router-dom";
 
 const CrearTecnico = () => {
