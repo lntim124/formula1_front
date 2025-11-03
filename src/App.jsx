@@ -25,7 +25,7 @@ import CrearPilCarr from "./Components/Crear/PilCarr.jsx";
 import CrearPiloto from "./Components/Crear/Piloto.jsx";
 import CrearServicio from "./Components/Crear/Servicio.jsx";
 import CrearTecnico from "./Components/Crear/Tecnico.jsx";
-//import CrearTipoPenalizacion from "./Components/Crear/TipoPenalizacion.jsx";
+import CrearTipoPenalizacion from "./Components/Crear/TipoPenalizacion.jsx";
 
 // ===== EDITAR =====
 import EditarAutCir from "./Components/Editar/AutCir.jsx";
@@ -45,7 +45,7 @@ import EditarPilCarr from "./Components/Editar/PilCarr.jsx";
 import EditarPiloto from "./Components/Editar/Piloto.jsx";
 import EditarServicio from "./Components/Editar/Servicio.jsx";
 import EditarTecnico from "./Components/Editar/Tecnico.jsx";
-//import EditarTipoPenalizacion from "./Components/Editar/TipoPenalizacion.jsx";
+import EditarTipoPenalizacion from "./Components/Editar/TipoPenalizacion.jsx";
 
 // ===== =====
 import EliminarAutCir from "./Components/Eliminar/AutCir.jsx";
@@ -65,7 +65,7 @@ import EliminarPilCarr from "./Components/Eliminar/PilCarr.jsx";
 import EliminarPiloto from "./Components/Eliminar/Piloto.jsx";
 import EliminarServicio from "./Components/Eliminar/Servicio.jsx";
 import EliminarTecnico from "./Components/Eliminar/Tecnico.jsx";
-//import EliminarTipoPenalizacion from "./Components/Eliminar/TipoPenalizacion.jsx";
+import EliminarTipoPenalizacion from "./Components/Eliminar/TipoPenalizacion.jsx";
 
 // ===== LiSTAR =====
 import ListarAutCir from "./Components/Listar/AutCir.jsx";
@@ -85,7 +85,7 @@ import ListarPilCarr from "./Components/Listar/PilCarr.jsx";
 import ListarPiloto from "./Components/Listar/Piloto.jsx";
 import ListarServicio from "./Components/Listar/Servicio.jsx";
 import ListarTecnico from "./Components/Listar/Tecnico.jsx";
-//import ListarTipoPenalizacion from "./Components/Listar/TipoPenalizacion.jsx";
+import ListarTipoPenalizacion from "./Components/Listar/TipoPenalizacion.jsx";
 
 
 // ===== BUSCAR =====
@@ -106,7 +106,7 @@ import BuscarPilCarr from "./Components/Buscar/PilCarr.jsx";
 import BuscarPiloto from "./Components/Buscar/Piloto.jsx";
 import BuscarServicio from "./Components/Buscar/Servicio.jsx";
 import BuscarTecnico from "./Components/Buscar/Tecnico.jsx";
-//import BuscarTipoPenalizacion from "./Components/Buscar/TipoPenalizacion.jsx";
+import BuscarTipoPenalizacion from "./Components/Buscar/TipoPenalizacion.jsx";
 
 // ===== RELACIONES =====
 import RelacionPilotoAutoAsignar from "./Components/Relaciones/RelacionPilotoAutoAsignar";
@@ -148,7 +148,7 @@ function App() {
       <Routes>
         {/* ==== PÁGINA DE BIENVENIDA CON CORTINA ==== */}
         <Route path="/" element={<Welcome />} />
-        <Route path="/menuprincipal" element={<Principal />} />
+        <Route path="/dashboard" element={<Principal />} />
 
 
 
@@ -170,7 +170,7 @@ function App() {
       <Route path="/crear-piloto" element={<CrearPiloto />} />
       <Route path="/crear-servicio" element={<CrearServicio />} />
       <Route path="/crear-tecnico" element={<CrearTecnico />} />
-     {/* <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />*/}
+      <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />
       
       {/* Editar */}
       <Route path="/editar-autcir" element={<EditarAutCir />} />
@@ -190,7 +190,7 @@ function App() {
       <Route path="/editar-piloto" element={<EditarPiloto />} />
       <Route path="/editar-servicio" element={<EditarServicio />} />
       <Route path="/editar-tecnico" element={<EditarTecnico />} />
-      {/*<Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />*/}
+      <Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />
 
       {/* ELIMINAR*/}
       <Route path="/eliminar-autcir" element={<EliminarAutCir />} />
@@ -210,7 +210,7 @@ function App() {
       <Route path="/eliminar-piloto" element={<EliminarPiloto />} />
       <Route path="/eliminar-servicio" element={<EliminarServicio />} />
       <Route path="/eliminar-tecnico" element={<EliminarTecnico />} />
-      {/*<Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />*/}
+      <Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />
       
       {/* Buscar */}
       <Route path="/buscar-autcir" element={<BuscarAutCir />} />
@@ -230,7 +230,7 @@ function App() {
       <Route path="/buscar-piloto" element={<BuscarPiloto />} />
       <Route path="/buscar-servicio" element={<BuscarServicio />} />
       <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
-      {/*<Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />*/}
+      <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
 
       {/* Listar */}
       <Route path="/listar-autcir" element={<ListarAutCir />} />
@@ -250,7 +250,7 @@ function App() {
       <Route path="/listar-piloto" element={<ListarPiloto />} />
       <Route path="/listar-servicio" element={<ListarServicio />} />
       <Route path="/listar-tecnico" element={<ListarTecnico />} />
-      {/*<Route path="/listar-tipo-penalizacion" element={<ListarTipoPenalizacion />} />*/}
+      <Route path="/listar-tipo-penalizacion" element={<ListarTipoPenalizacion />} />
 
         {/* ==== RELACIONES ==== */}
         <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />

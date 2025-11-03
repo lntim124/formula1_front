@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { crearTipoPenalizacion } from "../../Service/TipoPenalizacionService";
+import  crearTipoPenalizacion  from "../../Service/TipoPenalizacionService";
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
