@@ -159,7 +159,7 @@ function App() {
       <Route path="/eliminar-auttec" element={<AutTec />} />
       <Route path="/eliminar-auto" element={<Auto />} />
       <Route path="/eliminar-carrera" element={<Carrera />} />
-      <Route path="/eliminar-circuito" element={<EliminarCircuito />} />
+      <Route path="/eliminar-circuito" element={<Circuito />} />
       <Route path="/eliminar-empleado" element={<Empleado />} />
       <Route path="/eliminar-especialidad" element={<Especialidad />} />
       <Route path="/eliminar-estado" element={<Estado />} />
@@ -175,7 +175,7 @@ function App() {
       <Route path="/eliminar-tipo-penalizacion" element={<TipoPenalizacion />} />
 
       {/* Buscar */}
-<<<<<<< HEAD
+
       <Route path="/buscar-autcir" element={<AutCir />} />
       <Route path="/buscar-auttec" element={<AutTec />} />
       <Route path="/buscar-auto" element={<Auto />} />
@@ -194,7 +194,7 @@ function App() {
       <Route path="/buscar-servicio" element={<Servicio />} />
       <Route path="/buscar-tecnico" element={<Tecnico />} />
       <Route path="/buscar-tipo-penalizacion" element={<TipoPenalizacion />} />
-=======
+
       <Route path="/buscar-autcir" element={<BuscarAutCir />} />
       <Route path="/buscar-auttec" element={<BuscarAutTec />} />
       <Route path="/buscar-auto" element={<BuscarAuto />} />
@@ -238,7 +238,7 @@ function App() {
         <Route path="/penalizacion-asignar-tipo" element={<RelacionPenalizacionTipoAsignar />} />
         <Route path="/penalizacion-quitar-tipo" element={<RelacionPenalizacionTipoEliminar />} />
         <Route path="/penalizacion-ver-tipos" element={<RelacionPenalizacionVerTipos />} />
->>>>>>> 50ac242b5552cea247758a4078bfb60a34dec84e
+
     </Routes>
   );
 }
