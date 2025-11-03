@@ -106,6 +106,21 @@ import RelacionPenalizacionTipoAsignar from "./Components/Relaciones/RelacionPen
 import RelacionPenalizacionTipoEliminar from "./Components/Relaciones/RelacionPenalizacionTipoEliminar";
 import RelacionPenalizacionVerTipos from "./Components/Relaciones/RelacionPenalizacionVerTipos";
 
+//REPORTES
+
+import ReporteAutoVelocidad from "./Components/Reportes/ReporteAutoVelocidad.jsx";
+import ReporteAutoServicios from "./Components/Reportes/ReporteAutoServicios.jsx";
+import PenalizacionPorPiloto from "./Components/Reportes/PenalizacionPorPiloto.jsx";
+import PenalizacionPorCarrera from "./Components/Reportes/PenalizacionPorCarrera.jsx";
+import CircuitoGanador from "./Components/Reportes/CircuitoGanador.jsx";
+import CircuitoResumen from "./Components/Reportes/CircuitoResumen.jsx";
+import RendimientoCircuito from "./Components/Reportes/RendimientoCircuito.jsx";
+import PilotoResultado from "./Components/Reportes/PilotoResultado.jsx";
+import PilotoResumenRendimiento from "./Components/Reportes/PilotoResumenRendimiento.jsx";
+import PilotoPodios from "./Components/Reportes/PilotoPodios.jsx";
+import TecnicoAutos from "./Components/Reportes/TecnicoAutos.jsx";
+import TecnicoRendimiento from "./Components/Reportes/TecnicoRendimiento.jsx";
+
 
 function App() {
   return (
@@ -133,7 +148,7 @@ function App() {
       <Route path="/crear-servicio" element={<Servicio />} />
       <Route path="/crear-tecnico" element={<Tecnico />} />
       <Route path="/crear-tipo-penalizacion" element={<TipoPenalizacion />} />
-
+      
       {/* Editar */}
       <Route path="/editar-autcir" element={<AutCir />} />
       <Route path="/editar-auttec" element={<AutTec />} />
@@ -173,9 +188,8 @@ function App() {
       <Route path="/eliminar-servicio" element={<Servicio />} />
       <Route path="/eliminar-tecnico" element={<Tecnico />} />
       <Route path="/eliminar-tipo-penalizacion" element={<TipoPenalizacion />} />
-
+      
       {/* Buscar */}
-
       <Route path="/buscar-autcir" element={<AutCir />} />
       <Route path="/buscar-auttec" element={<AutTec />} />
       <Route path="/buscar-auto" element={<Auto />} />
@@ -239,6 +253,29 @@ function App() {
         <Route path="/penalizacion-quitar-tipo" element={<RelacionPenalizacionTipoEliminar />} />
         <Route path="/penalizacion-ver-tipos" element={<RelacionPenalizacionVerTipos />} />
 
+        {/* ================== REPORTES ================== */}
+
+{/* ======= Reportes de Autos ======= */}
+<Route path="/reporte/auto/velocidad" element={<ReporteAutoVelocidad />} />
+<Route path="/reporte/auto/servicios" element={<ReporteAutoServicios />} />
+
+{/* ======= Reportes de Penalizaciones ======= */}
+<Route path="/reporte/penalizacion/piloto" element={<PenalizacionPorPiloto />} />
+<Route path="/reporte/penalizacion/carrera" element={<PenalizacionPorCarrera />} />
+
+{/* ======= Reportes de Circuitos y Carreras ======= */}
+<Route path="/reporte/circuito/rendimiento" element={<RendimientoCircuito />} />
+<Route path="/reporte/circuito/ganador" element={<CircuitoGanador />} />
+<Route path="/reporte/circuito/resumen" element={<CircuitoResumen />} />
+
+{/* ======= Reportes de Pilotos ======= */}
+<Route path="/reporte/piloto/resultado" element={<PilotoResultado />} />
+<Route path="/reporte/piloto/resumen" element={<PilotoResumenRendimiento />} />
+<Route path="/reporte/piloto/podio" element={<PilotoPodios />} />
+
+{/* ======= Reportes de Técnicos ======= */}
+<Route path="/reporte/tecnico/rendimiento" element={<TecnicoRendimiento />} />
+<Route path="/reporte/tecnico/autos" element={<TecnicoAutos />} />
     </Routes>
   );
 }
