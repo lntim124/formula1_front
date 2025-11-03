@@ -21,11 +21,11 @@ const CrearModelo = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8080/modelo/crear", modelo);
-      alert("✅ Modelo creado correctamente");
+      alert("Modelo creado correctamente");
       navigate("/listar-modelo");
     } catch (error) {
       console.error("Error al crear el modelo:", error);
-      alert("❌ Ocurrió un error al crear el modelo");
+      alert("Ocurrió un error al crear el modelo");
     }
   };
 

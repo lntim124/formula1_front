@@ -34,10 +34,10 @@ export default function EditarAuto() {
         fechaEstreno: form.fechaEstreno,
         idModelo: Number(form.idModelo),
       });
-      alert("Actualizado ✅");
+      alert("Actualizado ");
       navigate("/lista-auto");
     } catch {
-      alert("No se pudo actualizar ❌");
+      alert("No se pudo actualizar ");
     }
   };
 

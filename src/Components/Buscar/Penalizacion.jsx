@@ -1,4 +1,4 @@
-// src/components/BuscarPenalizacion.js
+
 import React, { useState } from "react";
 import PenalizacionService from "../service/PenalizacionService";
 import "./BuscarPenalizacion.css";
@@ -20,7 +20,7 @@ const BuscarPenalizacion = () => {
         setPenalizacion(response.data);
       })
       .catch(() => {
-        alert("❌ Penalización no encontrada");
+        alert(" Penalización no encontrada");
         setPenalizacion(null);
       });
   };

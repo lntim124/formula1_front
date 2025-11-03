@@ -3,7 +3,7 @@ import {
   listarTipoPenalizaciones,
   eliminarTipoPenalizacion,
 } from "../service/tipoPenalizacionService";
-import "./ListarTipoPenalizacion.css";
+import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
 const ListarTipoPenalizacion = () => {

@@ -21,7 +21,7 @@ const CrearNacionalidad = () => {
     e.preventDefault();
     NacionalidadService.crearNacionalidad(nacionalidad)
       .then(() => {
-        alert("✅ Nacionalidad creada correctamente");
+        alert("Nacionalidad creada correctamente");
         navigate("/listar-nacionalidad");
       })
       .catch((error) => {

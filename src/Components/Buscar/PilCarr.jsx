@@ -19,7 +19,7 @@ const BuscarPilCarr = () => {
     } catch (error) {
       console.error("Error al buscar la relación:", error);
       setResultado(null);
-      setMensaje("❌ No se encontró la relación especificada");
+      setMensaje("No se encontró la relación especificada");
     }
   };
 

@@ -1,4 +1,3 @@
-// src/components/ListarPenalizacion.js
 import React, { useEffect, useState } from "react";
 import PenalizacionService from "../service/PenalizacionService";
 import "./ListarPenalizacion.css";

@@ -20,7 +20,7 @@ const BuscarMotor = () => {
         setMotor(response.data);
       })
       .catch(() => {
-        alert("❌ Motor no encontrado");
+        alert("Motor no encontrado");
         setMotor(null);
       });
   };

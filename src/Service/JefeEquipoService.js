@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const JEFE_BASE_URL = "http://localhost:8081/jefe_equipo";
+const JEFE_BASE_URL = "http://localhost:8080/jefe_equipo";
 
 class JefeEquipoService {
   // Listar

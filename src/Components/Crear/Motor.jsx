@@ -22,12 +22,12 @@ const CrearMotor = () => {
     e.preventDefault();
     MotorService.crearMotor(motor)
       .then(() => {
-        alert("✅ Motor creado correctamente");
+        alert("Motor creado correctamente");
         navigate("/listar-motor");
       })
       .catch((error) => {
         console.error("Error al crear motor:", error);
-        alert("❌ Error al crear motor");
+        alert("Error al crear motor");
       });
   };
 
