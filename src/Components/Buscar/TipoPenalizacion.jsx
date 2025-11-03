@@ -3,7 +3,7 @@ import TipoPenalizacionService from "../../Service/tipoPenalizacionService";
 import "./TipoPenalizacion.css";
 import { useNavigate } from "react-router-dom";
 
-const TipoPenalizacion = () => {
+const BuscarTipoPenalizacion = () => {
   const [id, setId] = useState("");
   const [resultado, setResultado] = useState(null);
   const navigate = useNavigate();
@@ -11,8 +11,11 @@ const TipoPenalizacion = () => {
   const handleBuscar = async (e) => {
     e.preventDefault();
     try {
-      const res = await TipoPenalizacionService.getTipoPenalizacionById(Number(id));
-      setResultado(res.data || null);
+      // ✅ LLAMAR AL MÉTODO CORRECTO
+      const res = await TipoPenalizacionService.buscarTipoPenalizacion(Number(id));
+
+      // ✅ EL SERVICIO YA DEVUELVE LA DATA DIRECTA
+      setResultado(res || null);
     } catch (err) {
       console.error(err);
       setResultado(null);
@@ -20,7 +23,7 @@ const TipoPenalizacion = () => {
     }
   };
 
-  const volver = () => navigate("/listar-tipo-penalizacion"); // tu ruta
+  const volver = () => navigate("/listar-tipo-penalizacion");
 
   return (
     <div className="buscar-tipo-container">
@@ -49,4 +52,4 @@ const TipoPenalizacion = () => {
   );
 };
 
-export default TipoPenalizacion;
+export default BuscarTipoPenalizacion;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 
 function AutCir() {

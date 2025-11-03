@@ -1,7 +1,7 @@
-// src/components/ListarNacionalidad.js
+
 import React, { useEffect, useState } from "react";
 import NacionalidadService from "../service/NacionalidadService";
-import "./ListarNacionalidad.css";
+import "./Nacionalidad.css";
 import { useNavigate } from "react-router-dom";
 
 const Nacionalidad = () => {

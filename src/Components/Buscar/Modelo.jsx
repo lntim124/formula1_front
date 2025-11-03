@@ -3,7 +3,7 @@ import "./Modelo.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Modelo = () => {
+const BuscarModelo = () => {
   const [id, setId] = useState("");
   const [modelo, setModelo] = useState(null);
   const [error, setError] = useState("");

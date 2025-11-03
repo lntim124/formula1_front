@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./Circuito.css";
 import CircuitoService from "../../Service/CircuitoService";
 
 function Circuito() {

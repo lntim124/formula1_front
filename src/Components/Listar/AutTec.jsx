@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 
 function AutTec() {

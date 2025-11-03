@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ESPECIALIDAD_BASE_URL = "http://localhost:8081/especialidad";
+const ESPECIALIDAD_BASE_URL = "http://localhost:8080/especialidad";
 
 class EspecialidadService {
   // Listar

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Listar.css";
+import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 
  function Auto() {

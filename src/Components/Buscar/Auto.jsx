@@ -22,7 +22,7 @@ function Auto() {
       <div className="row">
         <div>
           <label>Placa</label>
-          <input value={placa} onChange={e=>setPlaca(e.target.value)} />
+          <input value={placa} onChange={e => setPlaca(e.target.value)} />
         </div>
       </div>
       <div className="buttons">

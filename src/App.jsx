@@ -1,112 +1,93 @@
 import "./index.css";
 import "./App.css";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Pages
+// Páginas principales
 import Welcome from "./pages/Welcome.jsx";
 import Principal from "./pages/Principal.jsx";
 
-//BUSCAR
-import AutCir from "./Components/Buscar/AutCir.jsx";
-import Auto from "./Components/Buscar/Auto.jsx";
-import AutTec from "./Components/Buscar/AutTec.jsx";
-import Carrera from "./Components/Buscar/Carrera.jsx";
-import Circuito from "./Components/Buscar/Circuito.jsx";
-import Empleado from "./Components/Buscar/Empleado.jsx";
-import Especialidad from "./Components/Buscar/Especialidad.jsx";
-import Estado from "./Components/Buscar/Estado.jsx";
-import JefeEquipo from "./Components/Buscar/JefeEquipo.jsx";
-import Modelo from "./Components/Buscar/Modelo.jsx";
-import Motor from "./Components/Buscar/Motor.jsx";
-import Nacionalidad from "./Components/Buscar/Nacionalidad.jsx";
-import Penalizacion from "./Components/Buscar/Penalizacion.jsx";
-import PilCarr from "./Components/Buscar/PilCarr.jsx";
-import Piloto from "./Components/Buscar/Piloto.jsx";
-import Servicio from "./Components/Buscar/Servicio.jsx";
-import Tecnico from "./Components/Buscar/Tecnico.jsx";
-import TipoPenalizacion from "./Components/Buscar/TipoPenalizacion.jsx";
-
-//CREAR
+// ===== CREAR =====
 import AutCir from "./Components/Crear/AutCir.jsx";
 import AutTec from "./Components/Crear/AutTec.jsx";
 import Auto from "./Components/Crear/Auto.jsx";
 import Carrera from "./Components/Crear/Carrera.jsx";
+import Circuito from "./Components/Crear/Circuito.jsx";
 import Empleado from "./Components/Crear/Empleado.jsx";
 import Especialidad from "./Components/Crear/Especialidad.jsx";
 import Estado from "./Components/Crear/Estado.jsx";
 import JefeEquipo from "./Components/Crear/JefeEquipo.jsx";
-import Modelo from "./Components/Crear/Modelo.jsx";
-import Motor from "./Components/Crear/Motor.jsx";
-import Nacionalidad from "./Components/Crear/Nacionalidad.jsx";
-import Penalizacion from "./Components/Crear/Penalizacion.jsx";
-import PilCarr from "./Components/Crear/PilCarr.jsx";
-import Piloto from "./Components/Crear/Piloto.jsx";
-import Servicio from "./Components/Crear/Servicio.jsx";
-import Tecnico from "./Components/Crear/Tecnico.jsx";
-import TipoPenalizacion from "./Components/Crear/TipoPenalizacion.jsx";
+import CrearModelo from "./Components/Crear/Modelo.jsx";
+import CrearMotor from "./Components/Crear/Motor.jsx";
+import CrearNacionalidad from "./Components/Crear/Nacionalidad.jsx";
+import CrearPenalizacion from "./Components/Crear/Penalizacion.jsx";
+import CrearPilCarr from "./Components/Crear/PilCarr.jsx";
+import CrearPiloto from "./Components/Crear/Piloto.jsx";
+import CrearServicio from "./Components/Crear/Servicio.jsx";
+import CrearTecnico from "./Components/Crear/Tecnico.jsx";
+import CrearTipoPenalizacion from "./Components/Crear/TipoPenalizacion.jsx";
 
-//EDITAR
-import AutCir from "./Components/Editar/AutCir.jsx";
-import Auto from "./Components/Editar/Auto.jsx";
-import AutTec from "./Components/Editar/AutTec.jsx";
-import Carrera from "./Components/Editar/Carrera.jsx";
-import Circuito from "./Components/Editar/Circuito.jsx";
-import Empleado from "./Components/Editar/Empleado.jsx";
-import Especialidad from "./Components/Editar/Especialidad.jsx";
-import Estado from "./Components/Editar/Estado.jsx";
-import JefeEquipo from "./Components/Editar/JefeEquipo.jsx";
-import Modelo from "./Components/Editar/Modelo.jsx";
-import Motor from "./Components/Editar/Motor.jsx";
-import Nacionalidad from "./Components/Editar/Nacionalidad.jsx";
-import Penalizacion from "./Components/Editar/Penalizacion.jsx";
-import PilCarr from "./Components/Editar/PilCarr.jsx";
-import Piloto from "./Components/Editar/Piloto.jsx";
-import Servicio from "./Components/Editar/Servicio.jsx";
-import Tecnico from "./Components/Editar/Tecnico.jsx";
-import TipoPenalizacion from "./Components/Editar/TipoPenalizacion.jsx";
+// ===== EDITAR =====
+import EditarAutCir from "./Components/Editar/AutCir.jsx";
+import EditarAutTec from "./Components/Editar/AutTec.jsx";
+import EditarAuto from "./Components/Editar/Auto.jsx";
+import EditarCarrera from "./Components/Editar/Carrera.jsx";
+import EditarCircuito from "./Components/Editar/Circuito.jsx";
+import EditarEmpleado from "./Components/Editar/Empleado.jsx";
+import EditarEspecialidad from "./Components/Editar/Especialidad.jsx";
+import EditarEstado from "./Components/Editar/Estado.jsx";
+import EditarJefeEquipo from "./Components/Editar/JefeEquipo.jsx";
+import EditarModelo from "./Components/Editar/Modelo.jsx";
+import EditarMotor from "./Components/Editar/Motor.jsx";
+import EditarNacionalidad from "./Components/Editar/Nacionalidad.jsx";
+import EditarPenalizacion from "./Components/Editar/Penalizacion.jsx";
+import EditarPilCarr from "./Components/Editar/PilCarr.jsx";
+import EditarPiloto from "./Components/Editar/Piloto.jsx";
+import EditarServicio from "./Components/Editar/Servicio.jsx";
+import EditarTecnico from "./Components/Editar/Tecnico.jsx";
+import EditarTipoPenalizacion from "./Components/Editar/TipoPenalizacion.jsx";
 
-//ELIMINAR
-import AutCir from "./Components/Eliminar/AutCir.jsx";
-import AutTec from "./Components/Eliminar/AutTec.jsx";
-import Auto from "./Components/Eliminar/Auto.jsx";
-import Carrera from "./Components/Eliminar/Carrera.jsx";
-import Circuito from "./Components/Eliminar/Circuito.jsx";
-import Empleado from "./Components/Eliminar/Empleado.jsx";
-import Especialidad from "./Components/Eliminar/Especialidad.jsx";
-import Estado from "./Components/Eliminar/Estado.jsx";
-import JefeEquipo from "./Components/Eliminar/JefeEquipo.jsx";
-import Modelo from "./Components/Eliminar/Modelo.jsx";
-import Motor from "./Components/Eliminar/Motor.jsx";
-import Nacionalidad from "./Components/Eliminar/Nacionalidad.jsx";
-import Penalizacion from "./Components/Eliminar/Penalizacion.jsx";
-import PilCarr from "./Components/Eliminar/PilCarr.jsx";
-import Piloto from "./Components/Eliminar/Piloto.jsx";
-import Servicio from "./Components/Eliminar/Servicio.jsx";
-import Tecnico from "./Components/Eliminar/Tecnico.jsx";
-import TipoPenalizacion from "./Components/Eliminar/TipoPenalizacion.jsx";
+// ===== ELIMINAR =====
+import EliminarAutCir from "./Components/Eliminar/AutCir.jsx";
+import EliminarAutTec from "./Components/Eliminar/AutTec.jsx";
+import EliminarAuto from "./Components/Eliminar/Auto.jsx";
+import EliminarCarrera from "./Components/Eliminar/Carrera.jsx";
+import EliminarCircuito from "./Components/Eliminar/Circuito.jsx";
+import EliminarEmpleado from "./Components/Eliminar/Empleado.jsx";
+import EliminarEspecialidad from "./Components/Eliminar/Especialidad.jsx";
+import EliminarEstado from "./Components/Eliminar/Estado.jsx";
+import EliminarJefeEquipo from "./Components/Eliminar/JefeEquipo.jsx";
+import EliminarModelo from "./Components/Eliminar/Modelo.jsx";
+import EliminarMotor from "./Components/Eliminar/Motor.jsx";
+import EliminarNacionalidad from "./Components/Eliminar/Nacionalidad.jsx";
+import EliminarPenalizacion from "./Components/Eliminar/Penalizacion.jsx";
+import EliminarPilCarr from "./Components/Eliminar/PilCarr.jsx";
+import EliminarPiloto from "./Components/Eliminar/Piloto.jsx";
+import EliminarServicio from "./Components/Eliminar/Servicio.jsx";
+import EliminarTecnico from "./Components/Eliminar/Tecnico.jsx";
+import EliminarTipoPenalizacion from "./Components/Eliminar/TipoPenalizacion.jsx";
 
-//LISTAR
-import AutCir from "./Components/Listar/AutCir.jsx";
-import Auto from "./Components/Listar/Auto.jsx";
-import AutTec from "./Components/Listar/AutTec.jsx";
-import Carrera from "./Components/Listar/Carrera.jsx";
-import Circuito from "./Components/Listar/Circuito.jsx";
-import Empleado from "./Components/Listar/Empleado.jsx";
-import Especialidad from "./Components/Listar/Especialidad.jsx";
-import Estado from "./Components/Listar/Estado.jsx";
-import JefeEquipo from "./Components/Listar/JefeEquipo.jsx";
-import Modelo from "./Components/Listar/Modelo.jsx";
-import Motor from "./Components/Listar/Motor.jsx";
-import Nacionalidad from "./Components/Listar/Nacionalidad.jsx";
-import Penalizacion from "./Components/Listar/Penalizacion.jsx";
-import PilCarr from "./Components/Listar/PilCarr.jsx";
-import Piloto from "./Components/Listar/Piloto.jsx";
-import Servicio from "./Components/Listar/Servicio.jsx";
-import Tecnico from "./Components/Listar/Tecnico.jsx";
-import TipoPenalizacion from "./Components/Listar/TipoPenalizacion.jsx";
+// ===== BUSCAR =====
+import BuscarAutCir from "./Components/Buscar/AutCir.jsx";
+import BuscarAutTec from "./Components/Buscar/AutTec.jsx";
+import BuscarAuto from "./Components/Buscar/Auto.jsx";
+import BuscarCarrera from "./Components/Buscar/Carrera.jsx";
+import BuscarCircuito from "./Components/Buscar/Circuito.jsx";
+import BuscarEmpleado from "./Components/Buscar/Empleado.jsx";
+import BuscarEspecialidad from "./Components/Buscar/Especialidad.jsx";
+import BuscarEstado from "./Components/Buscar/Estado.jsx";
+import BuscarJefeEquipo from "./Components/Buscar/JefeEquipo.jsx";
+import BuscarModelo from "./Components/Buscar/Modelo.jsx";
+import BuscarMotor from "./Components/Buscar/Motor.jsx";
+import BuscarNacionalidad from "./Components/Buscar/Nacionalidad.jsx";
+import BuscarPenalizacion from "./Components/Buscar/Penalizacion.jsx";
+import BuscarPilCarr from "./Components/Buscar/PilCarr.jsx";
+import BuscarPiloto from "./Components/Buscar/Piloto.jsx";
+import BuscarServicio from "./Components/Buscar/Servicio.jsx";
+import BuscarTecnico from "./Components/Buscar/Tecnico.jsx";
+import BuscarTipoPenalizacion from "./Components/Buscar/TipoPenalizacion.jsx";
 
-//RELACIONES
+// ===== RELACIONES =====
 import RelacionPilotoAutoAsignar from "./Components/Relaciones/RelacionPilotoAutoAsignar";
 import RelacionPilotoAutoEliminar from "./Components/Relaciones/RelacionPilotoAutoEliminar";
 import RelacionPilotoVerAutos from "./Components/Relaciones/RelacionPilotoVerAutos";
@@ -124,7 +105,9 @@ import RelacionPenalizacionTipoAsignar from "./Components/Relaciones/RelacionPen
 import RelacionPenalizacionTipoEliminar from "./Components/Relaciones/RelacionPenalizacionTipoEliminar";
 import RelacionPenalizacionVerTipos from "./Components/Relaciones/RelacionPenalizacionVerTipos";
 
+<<<<<<< HEAD
 //REPORTES
+
 import ReporteAutoVelocidad from "./Components/Reportes/ReporteAutoVelocidad.jsx";
 import ReporteAutoServicios from "./Components/Reportes/ReporteAutoServicios.jsx";
 import PenalizacionPorPiloto from "./Components/Reportes/PenalizacionPorPiloto.jsx";
@@ -139,39 +122,20 @@ import TecnicoAutos from "./Components/Reportes/TecnicoAutos.jsx";
 import TecnicoRendimiento from "./Components/Reportes/TecnicoRendimiento.jsx";
 
 
-
+=======
+>>>>>>> 89f1f72 (correcciones)
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-
+        {/* ==== PÁGINA DE BIENVENIDA CON CORTINA ==== */}
         <Route path="/" element={<Welcome />} />
-        <Route path="/dashboard" element={<Principal />} />
 
-       {/*BUSCAR*/}
-      <Route path="/buscar-autcir" element={<AutCir />} />
-      <Route path="/buscar-auto" element={<Auto />} />
-      <Route path="/buscar-auttec" element={<AutTec />} />
-      <Route path="/buscar-carrera" element={<Carrera />} />
-      <Route path="/buscar-circuito" element={<Circuito />} />
-      <Route path="/buscar-empleado" element={<Empleado />} />
-      <Route path="/buscar-especialidad" element={<Especialidad />} />
-      <Route path="/buscar-estado" element={<Estado />} />
-      <Route path="/buscar-jefeequipo" element={<JefeEquipo />} />
-      <Route path="/buscar-modelo" element={<Modelo />} />
-      <Route path="/buscar-motor" element={<Motor />} />
-      <Route path="/buscar-nacionalidad" element={<Nacionalidad />} />
-      <Route path="/buscar-penalizacion" element={<Penalizacion />} />
-      <Route path="/buscar-pilcarr" element={<PilCarr />} />
-      <Route path="/buscar-piloto" element={<Piloto />} />
-      <Route path="/buscar-servicio" element={<Servicio />} />
-      <Route path="/buscar-tecnico" element={<Tecnico />} />
-      <Route path="/buscar-tipo-penalizacion" element={<TipoPenalizacion />} />
-
-      {/*CREAR*/}
-       <Route path="/crear-autcir" element={<ModeloAutCir />} />
-      <Route path="/crear-auto" element={<Auto />} />
+<<<<<<< HEAD
+      {/* Crear */}
+      <Route path="/crear-autcir" element={<AutCir />} />
       <Route path="/crear-auttec" element={<AutTec />} />
+      <Route path="/crear-auto" element={<Auto />} />
       <Route path="/crear-carrera" element={<Carrera />} />
       <Route path="/crear-circuito" element={<Circuito />} />
       <Route path="/crear-empleado" element={<Empleado />} />
@@ -179,7 +143,7 @@ function App() {
       <Route path="/crear-estado" element={<Estado />} />
       <Route path="/crear-jefeequipo" element={<JefeEquipo />} />
       <Route path="/crear-modelo" element={<Modelo />} />
-      <Route path="/crear-motor" element={<rMotor />} />
+      <Route path="/crear-motor" element={<Motor />} />
       <Route path="/crear-nacionalidad" element={<Nacionalidad />} />
       <Route path="/crear-penalizacion" element={<Penalizacion />} />
       <Route path="/crear-pilcarr" element={<PilCarr />} />
@@ -187,11 +151,11 @@ function App() {
       <Route path="/crear-servicio" element={<Servicio />} />
       <Route path="/crear-tecnico" element={<Tecnico />} />
       <Route path="/crear-tipo-penalizacion" element={<TipoPenalizacion />} />
-
-      {/*EDITAR*/}
+      
+      {/* Editar */}
       <Route path="/editar-autcir" element={<AutCir />} />
-      <Route path="/editar-auto" element={<Auto />} />
       <Route path="/editar-auttec" element={<AutTec />} />
+      <Route path="/editar-auto" element={<Auto />} />
       <Route path="/editar-carrera" element={<Carrera />} />
       <Route path="/editar-circuito" element={<Circuito />} />
       <Route path="/editar-empleado" element={<Empleado />} />
@@ -208,7 +172,7 @@ function App() {
       <Route path="/editar-tecnico" element={<Tecnico />} />
       <Route path="/editar-tipo-penalizacion" element={<TipoPenalizacion />} />
 
-      {/*ELIMINAR*/}
+      {/* Eliminar */}
       <Route path="/eliminar-autcir" element={<AutCir />} />
       <Route path="/eliminar-auttec" element={<AutTec />} />
       <Route path="/eliminar-auto" element={<Auto />} />
@@ -228,83 +192,162 @@ function App() {
       <Route path="/eliminar-tecnico" element={<Tecnico />} />
       <Route path="/eliminar-tipo-penalizacion" element={<TipoPenalizacion />} />
       
+      {/* Buscar */}
+      <Route path="/buscar-autcir" element={<AutCir />} />
+      <Route path="/buscar-auttec" element={<AutTec />} />
+      <Route path="/buscar-auto" element={<Auto />} />
+      <Route path="/buscar-carrera" element={<Carrera />} />
+      <Route path="/buscar-circuito" element={<Circuito />} />
+      <Route path="/buscar-empleado" element={<Empleado />} />
+      <Route path="/buscar-especialidad" element={<Especialidad />} />
+      <Route path="/buscar-estado" element={<Estado />} />
+      <Route path="/buscar-jefeequipo" element={<JefeEquipo />} />
+      <Route path="/buscar-modelo" element={<Modelo />} />
+      <Route path="/buscar-motor" element={<Motor />} />
+      <Route path="/buscar-nacionalidad" element={<Nacionalidad />} />
+      <Route path="/buscar-penalizacion" element={<Penalizacion />} />
+      <Route path="/buscar-pilcarr" element={<PilCarr />} />
+      <Route path="/buscar-piloto" element={<Piloto />} />
+      <Route path="/buscar-servicio" element={<Servicio />} />
+      <Route path="/buscar-tecnico" element={<Tecnico />} />
+      <Route path="/buscar-tipo-penalizacion" element={<TipoPenalizacion />} />
+=======
+        {/* ==== DASHBOARD ==== */}
+        <Route path="/dashboard" element={<Principal />} />
 
-      {/*LISTAR*/}
-      <Route path="/listar-autcir" element={<AutCir />} />
-      <Route path="/listar-auto" element={<Auto />} />
-      <Route path="/listar-auttec" element={<AutTec />} />
-      <Route path="/listar-carrera" element={<Carrera />} />
-      <Route path="/listar-circuito" element={<Circuito />} />
-      <Route path="/listar-empleado" element={<Empleado />} />
-      <Route path="/listar-especialidad" element={<Especialidad />} />
-      <Route path="/listar-estado" element={<Estado />} />
-      <Route path="/listar-jefeequipo" element={<JefeEquipo />} />
-      <Route path="/listar-modelo" element={<Modelo />} />
-      <Route path="/listar-motor" element={<Motor />} />
-      <Route path="/listar-nacionalidad" element={<Nacionalidad />} />
-      <Route path="/listar-penalizacion" element={<Penalizacion />} />
-      <Route path="/listar-pilcarr" element={<PilCarr />} />
-      <Route path="/listar-piloto" element={<Piloto />} />
-      <Route path="/listar-servicio" element={<Servicio />} />
-      <Route path="/listar-tecnico" element={<Tecnico />} />
-      <Route path="/listar-tipo-penalizacion" element={<TipoPenalizacion />} />
+        {/* ==== CREAR ==== */}
+        <Route path="/crear-autcir" element={<AutCir />} />
+        <Route path="/crear-auttec" element={<AutTec />} />
+        <Route path="/crear-auto" element={<Auto />} />
+        <Route path="/crear-carrera" element={<Carrera />} />
+        <Route path="/crear-circuito" element={<Circuito />} />
+        <Route path="/crear-empleado" element={<Empleado />} />
+        <Route path="/crear-especialidad" element={<Especialidad />} />
+        <Route path="/crear-estado" element={<Estado />} />
+        <Route path="/crear-jefeequipo" element={<JefeEquipo />} />
+        <Route path="/crear-modelo" element={<CrearModelo />} />
+        <Route path="/crear-motor" element={<CrearMotor />} />
+        <Route path="/crear-nacionalidad" element={<CrearNacionalidad />} />
+        <Route path="/crear-penalizacion" element={<CrearPenalizacion />} />
+        <Route path="/crear-pilcarr" element={<CrearPilCarr />} />
+        <Route path="/crear-piloto" element={<CrearPiloto />} />
+        <Route path="/crear-servicio" element={<CrearServicio />} />
+        <Route path="/crear-tecnico" element={<CrearTecnico />} />
+        <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />
 
-      {/*RELACIONES*/}
-      
-      <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />
-      <Route path="/piloto-eliminar-auto" element={<RelacionPilotoAutoEliminar />} />
-      <Route path="/piloto-ver-autos" element={<RelacionPilotoVerAutos />} />
-      <Route path="/piloto-ver-pilotos" element={<RelacionPilotoVerPilotos />} />
+        {/* ==== EDITAR ==== */}
+        <Route path="/editar-autcir" element={<EditarAutCir />} />
+        <Route path="/editar-auttec" element={<EditarAutTec />} />
+        <Route path="/editar-auto" element={<EditarAuto />} />
+        <Route path="/editar-carrera" element={<EditarCarrera />} />
+        <Route path="/editar-circuito" element={<EditarCircuito />} />
+        <Route path="/editar-empleado" element={<EditarEmpleado />} />
+        <Route path="/editar-especialidad" element={<EditarEspecialidad />} />
+        <Route path="/editar-estado" element={<EditarEstado />} />
+        <Route path="/editar-jefeequipo" element={<EditarJefeEquipo />} />
+        <Route path="/editar-modelo" element={<EditarModelo />} />
+        <Route path="/editar-motor" element={<EditarMotor />} />
+        <Route path="/editar-nacionalidad" element={<EditarNacionalidad />} />
+        <Route path="/editar-penalizacion" element={<EditarPenalizacion />} />
+        <Route path="/editar-pilcarr" element={<EditarPilCarr />} />
+        <Route path="/editar-piloto" element={<EditarPiloto />} />
+        <Route path="/editar-servicio" element={<EditarServicio />} />
+        <Route path="/editar-tecnico" element={<EditarTecnico />} />
+        <Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />
 
-       Técnico ↔ Especialidad *
+        {/* ==== ELIMINAR ==== */}
+        <Route path="/eliminar-autcir" element={<EliminarAutCir />} />
+        <Route path="/eliminar-auttec" element={<EliminarAutTec />} />
+        <Route path="/eliminar-auto" element={<EliminarAuto />} />
+        <Route path="/eliminar-carrera" element={<EliminarCarrera />} />
+        <Route path="/eliminar-circuito" element={<EliminarCircuito />} />
+        <Route path="/eliminar-empleado" element={<EliminarEmpleado />} />
+        <Route path="/eliminar-especialidad" element={<EliminarEspecialidad />} />
+        <Route path="/eliminar-estado" element={<EliminarEstado />} />
+        <Route path="/eliminar-jefeequipo" element={<EliminarJefeEquipo />} />
+        <Route path="/eliminar-modelo" element={<EliminarModelo />} />
+        <Route path="/eliminar-motor" element={<EliminarMotor />} />
+        <Route path="/eliminar-nacionalidad" element={<EliminarNacionalidad />} />
+        <Route path="/eliminar-penalizacion" element={<EliminarPenalizacion />} />
+        <Route path="/eliminar-pilcarr" element={<EliminarPilCarr />} />
+        <Route path="/eliminar-piloto" element={<EliminarPiloto />} />
+        <Route path="/eliminar-servicio" element={<EliminarServicio />} />
+        <Route path="/eliminar-tecnico" element={<EliminarTecnico />} />
+        <Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />
+
+        {/* ==== BUSCAR ==== */}
+        <Route path="/buscar-autcir" element={<BuscarAutCir />} />
+        <Route path="/buscar-auttec" element={<BuscarAutTec />} />
+        <Route path="/buscar-auto" element={<BuscarAuto />} />
+        <Route path="/buscar-carrera" element={<BuscarCarrera />} />
+        <Route path="/buscar-circuito" element={<BuscarCircuito />} />
+        <Route path="/buscar-empleado" element={<BuscarEmpleado />} />
+        <Route path="/buscar-especialidad" element={<BuscarEspecialidad />} />
+        <Route path="/buscar-estado" element={<BuscarEstado />} />
+        <Route path="/buscar-jefeequipo" element={<BuscarJefeEquipo />} />
+        <Route path="/buscar-modelo" element={<BuscarModelo />} />
+        <Route path="/buscar-motor" element={<BuscarMotor />} />
+        <Route path="/buscar-nacionalidad" element={<BuscarNacionalidad />} />
+        <Route path="/buscar-penalizacion" element={<BuscarPenalizacion />} />
+        <Route path="/buscar-pilcarr" element={<BuscarPilCarr />} />
+        <Route path="/buscar-piloto" element={<BuscarPiloto />} />
+        <Route path="/buscar-servicio" element={<BuscarServicio />} />
+        <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
+        <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
+>>>>>>> 89f1f72 (correcciones)
+
+        {/* ==== RELACIONES ==== */}
+        <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />
+        <Route path="/piloto-eliminar-auto" element={<RelacionPilotoAutoEliminar />} />
+        <Route path="/piloto-ver-autos" element={<RelacionPilotoVerAutos />} />
+        <Route path="/piloto-ver-pilotos" element={<RelacionPilotoVerPilotos />} />
+
         <Route path="/tecnico-asignar-especialidad" element={<RelacionTecnicoEspecialidadAsignar />} />
         <Route path="/tecnico-eliminar-especialidad" element={<RelacionTecnicoEspecialidadEliminar />} />
         <Route path="/tecnico-ver-especialidades" element={<RelacionTecnicoVerEspecialidades />} />
 
-         Penalización ↔ Piloto 
         <Route path="/penalizacion-asignar-piloto" element={<RelacionPenalizacionPilotoAsignar />} />
         <Route path="/penalizacion-eliminar-piloto" element={<RelacionPenalizacionPilotoEliminar />} />
         <Route path="/penalizacion-ver-por-piloto" element={<RelacionPenalizacionVerPorPiloto />} />
 
-        Penalización ↔ Carrera 
         <Route path="/penalizacion-asignar-carrera" element={<RelacionPenalizacionCarreraAsignar />} />
         <Route path="/penalizacion-eliminar-carrera" element={<RelacionPenalizacionCarreraEliminar />} />
         <Route path="/penalizacion-ver-por-carrera" element={<RelacionPenalizacionVerPorCarrera />} />
 
-        Penalización ↔ Tipo 
         <Route path="/penalizacion-asignar-tipo" element={<RelacionPenalizacionTipoAsignar />} />
         <Route path="/penalizacion-quitar-tipo" element={<RelacionPenalizacionTipoEliminar />} />
         <Route path="/penalizacion-ver-tipos" element={<RelacionPenalizacionVerTipos />} />
+<<<<<<< HEAD
 
-        {/* ================== REPORTES ================== *
+        {/* ================== REPORTES ================== */}
 
 {/* ======= Reportes de Autos ======= */}
 <Route path="/reporte/auto/velocidad" element={<ReporteAutoVelocidad />} />
 <Route path="/reporte/auto/servicios" element={<ReporteAutoServicios />} />
 
-{/* ======= Reportes de Penalizaciones ===*/}
+{/* ======= Reportes de Penalizaciones ======= */}
 <Route path="/reporte/penalizacion/piloto" element={<PenalizacionPorPiloto />} />
 <Route path="/reporte/penalizacion/carrera" element={<PenalizacionPorCarrera />} />
 
-{/* ======= Reportes de Circuitos y Carreras ===*/}
+{/* ======= Reportes de Circuitos y Carreras ======= */}
 <Route path="/reporte/circuito/rendimiento" element={<RendimientoCircuito />} />
 <Route path="/reporte/circuito/ganador" element={<CircuitoGanador />} />
 <Route path="/reporte/circuito/resumen" element={<CircuitoResumen />} />
 
-{/* ======= Reportes de Pilotos =====*/}
+{/* ======= Reportes de Pilotos ======= */}
 <Route path="/reporte/piloto/resultado" element={<PilotoResultado />} />
 <Route path="/reporte/piloto/resumen" element={<PilotoResumenRendimiento />} />
 <Route path="/reporte/piloto/podio" element={<PilotoPodios />} />
 
-{/* ======= Reportes de Técnicos ====*/}
+{/* ======= Reportes de Técnicos ======= */}
 <Route path="/reporte/tecnico/rendimiento" element={<TecnicoRendimiento />} />
 <Route path="/reporte/tecnico/autos" element={<TecnicoAutos />} />
-
-</Routes>
-</Router>
+    </Routes>
+=======
+      </Routes>
+    </BrowserRouter>
+>>>>>>> 89f1f72 (correcciones)
   );
 }
+
 export default App;
-
-
-

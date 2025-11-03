@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PenalizacionService from "../service/PenalizacionService";
-import "./ListarPenalizacion.css";
+import "./Penalizacion.css";
 import { useNavigate } from "react-router-dom";
 
 const Penalizacion = () => {
