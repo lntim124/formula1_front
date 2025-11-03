@@ -3,7 +3,7 @@ import "./AutTec.css";
 import AutTecService from "../../Service/AutTecService";
 import { useNavigate } from "react-router-dom";
 
-export default function AutTec() {
+ function AutTec() {
   const navigate = useNavigate();
   const [placa, setPlaca] = useState("");
   const [idTecnico, setIdTecnico] = useState("");
@@ -37,3 +37,5 @@ export default function AutTec() {
     </div>
   );
 }
+
+export default AutTec;

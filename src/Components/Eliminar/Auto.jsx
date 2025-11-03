@@ -3,7 +3,7 @@ import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 import { useNavigate } from "react-router-dom";
 
-export default function Auto() {
+ function Auto() {
   const navigate = useNavigate();
   const [placa, setPlaca] = useState("");
 
@@ -30,3 +30,4 @@ export default function Auto() {
     </div>
   );
 }
+export default Auto;

@@ -3,7 +3,7 @@ import "./JefeEquipo.css";
 import JefeEquipoService from "../../Service/JefeEquipoService";
 import { useNavigate } from "react-router-dom";
 
-const Equipo = () => {
+const JefeEquipo = () => {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({

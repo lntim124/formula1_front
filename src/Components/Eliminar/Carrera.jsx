@@ -3,7 +3,7 @@ import "./Carrera.css";
 import CarreraService from "../../Service/CarreraService";
 import { useNavigate } from "react-router-dom";
 
-export default function Carrera() {
+ function Carrera() {
   const navigate = useNavigate();
   const [id, setId] = useState("");
 
@@ -31,3 +31,4 @@ export default function Carrera() {
     </div>
   );
 }
+export default Carrera;

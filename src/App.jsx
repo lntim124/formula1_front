@@ -170,7 +170,7 @@ function App() {
       <Route path="/crear-piloto" element={<CrearPiloto />} />
       <Route path="/crear-servicio" element={<CrearServicio />} />
       <Route path="/crear-tecnico" element={<CrearTecnico />} />
-      <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />
+     {/* <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />*/}
       
       {/* Editar */}
       <Route path="/editar-autcir" element={<EditarAutCir />} />
@@ -190,7 +190,7 @@ function App() {
       <Route path="/editar-piloto" element={<EditarPiloto />} />
       <Route path="/editar-servicio" element={<EditarServicio />} />
       <Route path="/editar-tecnico" element={<EditarTecnico />} />
-      <Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />
+      {/*<Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />*/}
 
       {/* ELIMINAR*/}
       <Route path="/eliminar-autcir" element={<EliminarAutCir />} />
@@ -210,7 +210,7 @@ function App() {
       <Route path="/eliminar-piloto" element={<EliminarPiloto />} />
       <Route path="/eliminar-servicio" element={<EliminarServicio />} />
       <Route path="/eliminar-tecnico" element={<EliminarTecnico />} />
-      <Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />
+      {/*<Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />*/}
       
       {/* Buscar */}
       <Route path="/buscar-autcir" element={<BuscarAutCir />} />
@@ -230,7 +230,7 @@ function App() {
       <Route path="/buscar-piloto" element={<BuscarPiloto />} />
       <Route path="/buscar-servicio" element={<BuscarServicio />} />
       <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
-      <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
+      {/*<Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />*/}
 
       {/* Listar */}
       <Route path="/listar-autcir" element={<ListarAutCir />} />
@@ -250,7 +250,7 @@ function App() {
       <Route path="/listar-piloto" element={<ListarPiloto />} />
       <Route path="/listar-servicio" element={<ListarServicio />} />
       <Route path="/listar-tecnico" element={<ListarTecnico />} />
-      <Route path="/listar-tipo-penalizacion" element={<ListarTipoPenalizacion />} />
+      {/*<Route path="/listar-tipo-penalizacion" element={<ListarTipoPenalizacion />} />*/}
 
         {/* ==== RELACIONES ==== */}
         <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />

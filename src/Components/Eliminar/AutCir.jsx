@@ -3,7 +3,7 @@ import "./AutCir.css";
 import AutCirService from "../../Service/AutCirService";
 import { useNavigate } from "react-router-dom";
 
-export default function AutCir() {
+ function AutCir() {
   const navigate = useNavigate();
   const [idCircuito, setIdCircuito] = useState("");
   const [placa, setPlaca] = useState("");
@@ -37,3 +37,5 @@ export default function AutCir() {
     </div>
   );
 }
+
+export default AutCir;

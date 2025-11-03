@@ -35,4 +35,4 @@ function Estado() {
     </div>
   );
 }
-export default Eastado;
+export default Estado;

@@ -38,4 +38,4 @@ import PilotoReportService from "../../Service/PilotoReportService";
     </div>
   );
 }
-export default PilotoPodio;
+export default PilotoPodios;
