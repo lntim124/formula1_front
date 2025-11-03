@@ -1,0 +1,38 @@
+.report-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.report-container h2 {
+  margin: 0 0 12px;
+  color: #333;
+  text-align: center;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+thead th {
+  background: #eef3ff;
+  border-bottom: 1px solid #ddd;
+}
