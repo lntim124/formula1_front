@@ -1,4 +1,13 @@
 import { useEffect, useState } from "react";
+import CrearEmpleado from "../Components/Crear/Empleado";
+import ListarEmpleado from "../Components/Listar/Empleado";
+import ListarAuto from "../Components/Listar/Auto.jsx";
+import ListarPiloto from "../Components/Listar/Piloto.jsx";
+
+
+
+
+
 import {
   FaHome,
   FaFlagCheckered,
@@ -11,7 +20,7 @@ import {
 } from "react-icons/fa";
 
 /* ---------- Subcomponente: item del menú ---------- */
-function NavItem({ icon, label, active }) {
+function NavItem({ icon, label, active, onClick }) {
   const base = {
     display: "flex",
     alignItems: "center",
@@ -25,8 +34,9 @@ function NavItem({ icon, label, active }) {
     marginBottom: 8,
   };
   const ico = { fontSize: 16 };
+
   return (
-    <div style={base}>
+    <div style={base} onClick={onClick}>
       <span style={ico}>{icon}</span>
       <span>{label}</span>
     </div>
@@ -37,7 +47,7 @@ function NavItem({ icon, label, active }) {
 const styles = {
   layout: {
     display: "grid",
-    gridTemplateColumns: "260px 1fr", // Sidebar + contenido
+    gridTemplateColumns: "260px 1fr",
     minHeight: "100vh",
     background: "linear-gradient(180deg,#0b1626 0%, #0b1a2b 100%)",
     color: "#fff",
@@ -85,7 +95,6 @@ const styles = {
   },
   clock: { fontVariantNumeric: "tabular-nums" },
 
-
   homeContainer: {
     flexWrap: "wrap",
     display: "flex",
@@ -93,60 +102,42 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     marginTop: "20px",
-    
-  
   },
 
   homeImg: {
-    width: "420px",          
-    height: "340",           
+    width: "420px",
+    height: "340px",
     borderRadius: "12px",
     border: "1px solid rgba(255,255,255,.15)",
-    objectFit: "cover",    
-    boxShadow: "0 0 25px rgba(0,0,0,0.4)", 
-},
+    objectFit: "cover",
+    boxShadow: "0 0 25px rgba(0,0,0,0.4)",
+  },
   homeTitle: {
-  fontFamily: "'Orbitron', sans-serif",
-  fontSize: "15px",
-  fontWeight: 900,
-  color: "#ffffff",
-  textAlign: "center",
-  textTransform: "uppercase",
-  letterSpacing: "2px",
-  marginBottom: "20px",
-  width: "100%", 
-  display: "block", 
-  },
-
-homeText: {
-  flex: 1,
-  fontSize: "18px",
-  lineHeight: "1.8",
-  color: "#dce2ee",
-  textAlign: "justify", 
-  fontFamily: "'Poppins', sans-serif", 
-},
-"@media (min-width: 1600px)": {
-  homeContainer: {
-    gap: "80px",
-  },
-  homeImg: {
-    width: "500px",
+    fontFamily: "'Orbitron', sans-serif",
+    fontSize: "15px",
+    fontWeight: 900,
+    color: "#ffffff",
+    textAlign: "center",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
+    marginBottom: "20px",
+    width: "100%",
+    display: "block",
   },
   homeText: {
-    fontSize: "20px",
-    maxWidth: "800px",
+    flex: 1,
+    fontSize: "18px",
+    lineHeight: "1.8",
+    color: "#dce2ee",
+    textAlign: "justify",
+    fontFamily: "'Poppins', sans-serif",
   },
-  homeTitle: {
-    fontSize: "30px",
-  },
-},
 };
 
-
-
+/* ---------- COMPONENTE PRINCIPAL ---------- */
 export default function Principal() {
   const [hora, setHora] = useState("");
+  const [active, setActive] = useState("Inicio");
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -159,6 +150,46 @@ export default function Principal() {
 
   const c = styles;
 
+  /* ---------- Contenido dinámico según selección ---------- */
+  const renderContent = () => {
+    switch (active) {
+      case "Empleados":
+        return <ListarEmpleado></ListarEmpleado>;
+
+      case "Pilotos":
+        return <ListarPiloto></ListarPiloto>;
+
+      case "Técnicos":
+        return <h1>hola</h1>
+
+      case "Autos":
+        return <ListarAuto></ListarAuto>;
+
+      case "Carreras":
+        return <h2>Calendario y resultados de Carreras</h2>;
+      case "Autos":
+        return <h2>Gestión de Autos </h2>;
+      case "Penalizaciones":
+        return <h2>Historial de Penalizaciones </h2>;
+      case "Análisis y Reportes":
+        return <h2>Panel de Análisis y Reportes </h2>;
+      default:
+        return (
+          <div style={c.homeContainer}>
+            <img src="/f1.jpeg" alt="Imagen de inicio" style={c.homeImg} />
+            <div style={c.homeTitle}>
+              <h2>CONOCE LA HISTORIA DE TU EQUIPO</h2>
+              <p style={c.homeText}>
+                Red Bull Racing es una de las escuderías más exitosas y admiradas de la Fórmula 1 moderna. 
+                Fundada en 2005, tras la compra del antiguo equipo Jaguar Racing por parte de Red Bull GmbH,
+                la escudería estableció su sede en Milton Keynes, Reino Unido...
+              </p>
+            </div>
+          </div>
+        );
+    }
+  };
+
   return (
     <div style={c.layout}>
       {/* Sidebar */}
@@ -168,20 +199,60 @@ export default function Principal() {
         </div>
 
         <nav>
-          {/* 🔹 Nuevo botón de inicio con ícono de casa */}
-          <NavItem icon={<FaHome />} label="Inicio" active />
+          
+          <NavItem
+            icon={<FaUser />}
+            label="Pilotos"
+            active={active === "Pilotos"}
+            onClick={() => setActive("Pilotos")}
+          />
 
-          <NavItem icon={<FaUser />} label="Pilotos" />
-          <NavItem icon={<FaTools />} label="Técnicos y Pits" />
-          <NavItem icon={<FaFlagCheckered />} label="Carreras" />
-          <NavItem icon={<FaRoad />} label="Circuitos" />
-          <NavItem icon={<FaCar />} label="Autos" />
-          <NavItem icon={<FaExclamationTriangle />} label="Penalizaciones" />
-          <NavItem icon={<FaChartBar />} label="Análisis y Reportes" />
+          <NavItem
+            icon={<FaHome />}
+            label="Empleados"
+            active={active === "Empleados"}
+            onClick={() => setActive("Empleados")}
+          />
+          <NavItem
+            icon={<FaTools />}
+            label="Técnicos y Pits"
+            active={active === "Técnicos y Pits"}
+            onClick={() => setActive("Técnicos y Pits")}
+          />
+          <NavItem
+            icon={<FaFlagCheckered />}
+            label="Carreras"
+            active={active === "Carreras"}
+            onClick={() => setActive("Carreras")}
+          />
+          <NavItem
+            icon={<FaRoad />}
+            label="Circuitos"
+            active={active === "Circuitos"}
+            onClick={() => setActive("Circuitos")}
+          />
+          <NavItem
+            icon={<FaCar />}
+            label="Autos"
+            active={active === "Autos"}
+            onClick={() => setActive("Autos")}
+          />
+          <NavItem
+            icon={<FaExclamationTriangle />}
+            label="Penalizaciones"
+            active={active === "Penalizaciones"}
+            onClick={() => setActive("Penalizaciones")}
+          />
+          <NavItem
+            icon={<FaChartBar />}
+            label="Análisis y Reportes"
+            active={active === "Análisis y Reportes"}
+            onClick={() => setActive("Análisis y Reportes")}
+          />
         </nav>
       </aside>
 
-      {/* Panel derecho (solo encabezado) */}
+      {/* Panel derecho */}
       <main style={c.main}>
         <header style={c.topbar}>
           <h1 style={{ ...c.topbarTitle, textAlign: "left" }}>DATA SYSTEM</h1>
@@ -193,43 +264,9 @@ export default function Principal() {
           </div>
         </header>
 
-          <div style={c.homeContainer}>
-          <img
-            src="/f1.jpeg" 
-            alt="Imagen de inicio"
-            style={c.homeImg}
-          />
-
-          <div style={c.homeTitle}>
-         <h2>   CONOCE LA HISTORIA DE TU EQUIPO</h2>
- 
-            <p>
-              Red Bull Racing es una de las escuderías más exitosas y admiradas de la Fórmula 1 moderna. 
-              Fundada en 2005, tras la compra del antiguo equipo Jaguar Racing por parte de Red Bull GmbH, 
-              la escudería estableció su sede en Milton Keynes, Reino Unido. Desde sus primeros años,
-              Red Bull se distinguió por su estilo audaz, su enfoque innovador y una imagen fresca que rompió
-              con la tradición más conservadora del automovilismo.
-            </p>
-
-            <p>
-              Bajo la dirección técnica del legendario ingeniero Adrian Newey, el equipo alcanzó su primera gran 
-              etapa de gloria junto a Sebastian Vettel, conquistando cuatro campeonatos del mundo consecutivos entre 
-              2010 y 2013. Tras algunos años de transición, Red Bull volvió a dominar la categoría con Max Verstappen, 
-              quien desde 2021 ha liderado una nueva era de triunfos y récords para el equipo.
-
-            </p>
-
-            <p>
-              Más allá de los resultados, Red Bull Racing se ha consolidado como una fábrica de talento. Su programa de jóvenes 
-              pilotos ha impulsado las carreras de figuras como Daniel Ricciardo, Carlos Sainz Jr. y Pierre Gasly, demostrando su 
-              compromiso con el futuro del deporte.Hoy en día, Red Bull continúa siendo sinónimo de rendimiento, creatividad y excelencia 
-              técnica, manteniéndose como una de las escuderías más dominantes e inspiradoras del mundo de la Fórmula 1.
-            </p>
-          </div>
-        </div>
+        {/* Contenido dinámico */}
+        {renderContent()}
       </main>
     </div>
   );
 }
-
-     

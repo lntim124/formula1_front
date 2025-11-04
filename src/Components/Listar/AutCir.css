@@ -41,6 +41,7 @@ thead th {
 tbody td {
   padding: 8px;
   border-bottom: 1px solid #eee;
+  color:#dc3545;
 }
 
 tbody tr:hover {

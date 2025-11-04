@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const AUT_CIR_BASE_REST_API_URL = "http://localhost:8081/aut_Cir";
+const AUT_CIR_BASE_REST_API_URL = "http://localhost:8081/autCir";
 
 class AutCirService {
   // LISTAR

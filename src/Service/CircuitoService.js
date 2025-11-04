@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CIRCUITO_BASE_REST_API_URL = "http://localhost:8080/circuito";
+const CIRCUITO_BASE_REST_API_URL = "http://localhost:8081/circuito";
 
 class CircuitoService {
   // Listar

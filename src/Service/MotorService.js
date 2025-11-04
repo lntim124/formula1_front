@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/motor";
+const API_URL = "http://localhost:8081/motor";
 
 class MotorService {
   listarMotores() {

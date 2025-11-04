@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ESTADO_BASE_URL = "http://localhost:8080/estado";
+const ESTADO_BASE_URL = "http://localhost:8081/estado";
 
 class EstadoService {
   // Listar

@@ -15,24 +15,25 @@ const Auto = () => {
   });
 
   const handleChange = (e) => {
+    
     const { name, value } = e.target;
+    
     setAuto({ ...auto, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    AutoService.saveAuto({
+  AutoService.saveAuto({
       placa: auto.placa.trim(),
       numeroChasis: auto.numeroChasis.trim(),
-      idMotor: Number(auto.idMotor),
+      idmotor: Number(auto.idMotor),
       fechaEstreno: auto.fechaEstreno,
-      idModelo: Number(auto.idModelo),
+      idmodelo: Number(auto.idModelo),
     })
       .then((response) => {
         console.log("Auto guardado:", response.data);
         alert("Auto creado correctamente ");
-        navigate("/lista-auto");
+        navigate("/listar-auto");
       })
       .catch((error) => {
         console.error("Error al guardar el auto", error);
@@ -41,7 +42,7 @@ const Auto = () => {
   };
 
   const handleBack = () => {
-    navigate("/lista-auto");
+    navigate("/listar-auto");
   };
 
   return (

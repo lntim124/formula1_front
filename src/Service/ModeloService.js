@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/modelo";
+const API_URL = "http://localhost:8081/modelo";
 
 class ModeloService {
 

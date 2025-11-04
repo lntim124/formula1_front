@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/tecnico";
+const API_URL = "http://localhost:8081/tecnico";
 
 class TecnicoService {
   async listar() {

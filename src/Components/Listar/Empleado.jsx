@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
+import { useNavigate } from "react-router-dom";
 
 function Empleado() {
   const [rows, setRows] = useState([]);
+  const navigate = useNavigate();
+const irACrear = () => navigate("/crear-empleado");
 
   useEffect(() => {
     EmpleadoService.getAllEmpleado()
@@ -14,6 +17,9 @@ function Empleado() {
   return (
     <div className="list-container">
       <h2>Empleados</h2>
+      <button type="button"  onClick={irACrear}>
+            Crear Empleado
+          </button>
       <div className="table-wrap">
         <table>
           <thead>

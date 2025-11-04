@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/nacionalidad";
+const API_URL = "http://localhost:8081/nacionalidad";
 
 class NacionalidadService {
   listarNacionalidades() {

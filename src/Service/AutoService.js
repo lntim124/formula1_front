@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const AUTO_BASE_REST_API_URL = "http://localhost:8080/auto";
+const AUTO_BASE_REST_API_URL = "http://localhost:8081/auto";
 
 class AutoService {
   // Listar todos los autos
