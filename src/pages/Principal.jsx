@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import CrearEmpleado from "../Components/Crear/Empleado";
+
 import ListarEmpleado from "../Components/Listar/Empleado";
 import ListarAuto from "../Components/Listar/Auto.jsx";
-import ListarPiloto from "../Components/Listar/Piloto.jsx";
+import ListarPenalizacion from "../Components/Listar/Penalizacion.jsx";
+import ListarCarrera from "../Components/Listar/Carrera.jsx";
+
+
 
 
 
@@ -18,6 +22,7 @@ import {
   FaExclamationTriangle,
   FaChartBar,
 } from "react-icons/fa";
+import Penalizacion from "../Components/Crear/Penalizacion";
 
 /* ---------- Subcomponente: item del menú ---------- */
 function NavItem({ icon, label, active, onClick }) {
@@ -156,37 +161,17 @@ export default function Principal() {
       case "Empleados":
         return <ListarEmpleado></ListarEmpleado>;
 
-      case "Pilotos":
-        return <ListarPiloto></ListarPiloto>;
-
-      case "Técnicos":
-        return <h1>hola</h1>
-
       case "Autos":
         return <ListarAuto></ListarAuto>;
 
       case "Carreras":
-        return <h2>Calendario y resultados de Carreras</h2>;
-      case "Autos":
-        return <h2>Gestión de Autos </h2>;
+        return <ListarCarrera></ListarCarrera>;
+      
       case "Penalizaciones":
-        return <h2>Historial de Penalizaciones </h2>;
-      case "Análisis y Reportes":
-        return <h2>Panel de Análisis y Reportes </h2>;
-      default:
-        return (
-          <div style={c.homeContainer}>
-            <img src="/f1.jpeg" alt="Imagen de inicio" style={c.homeImg} />
-            <div style={c.homeTitle}>
-              <h2>CONOCE LA HISTORIA DE TU EQUIPO</h2>
-              <p style={c.homeText}>
-                Red Bull Racing es una de las escuderías más exitosas y admiradas de la Fórmula 1 moderna. 
-                Fundada en 2005, tras la compra del antiguo equipo Jaguar Racing por parte de Red Bull GmbH,
-                la escudería estableció su sede en Milton Keynes, Reino Unido...
-              </p>
-            </div>
-          </div>
-        );
+        return <ListarPenalizacion></ListarPenalizacion>;
+
+      //case "Análisis y Reportes":
+    
     }
   };
 
@@ -201,42 +186,26 @@ export default function Principal() {
         <nav>
           
           <NavItem
-            icon={<FaUser />}
-            label="Pilotos"
-            active={active === "Pilotos"}
-            onClick={() => setActive("Pilotos")}
-          />
-
-          <NavItem
             icon={<FaHome />}
             label="Empleados"
             active={active === "Empleados"}
             onClick={() => setActive("Empleados")}
           />
-          <NavItem
-            icon={<FaTools />}
-            label="Técnicos y Pits"
-            active={active === "Técnicos y Pits"}
-            onClick={() => setActive("Técnicos y Pits")}
-          />
-          <NavItem
-            icon={<FaFlagCheckered />}
-            label="Carreras"
-            active={active === "Carreras"}
-            onClick={() => setActive("Carreras")}
-          />
-          <NavItem
-            icon={<FaRoad />}
-            label="Circuitos"
-            active={active === "Circuitos"}
-            onClick={() => setActive("Circuitos")}
-          />
+          
           <NavItem
             icon={<FaCar />}
             label="Autos"
             active={active === "Autos"}
             onClick={() => setActive("Autos")}
           />
+
+          <NavItem
+            icon={<FaFlagCheckered />}
+            label="Carreras"
+            active={active === "Carreras"}
+            onClick={() => setActive("Carreras")}
+          />
+          
           <NavItem
             icon={<FaExclamationTriangle />}
             label="Penalizaciones"
