@@ -1,7 +1,7 @@
 import "./index.css";
 import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Páginas principales
 import Welcome from "./pages/Welcome.jsx";
@@ -146,151 +146,22 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* ==== PÁGINA DE BIENVENIDA CON CORTINA ==== */}
-        <Route path="/" element={<Welcome />} />
+        {/* Página inicial */}
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+
+        {/* Dashboard principal */}
         <Route path="/dashboard" element={<Principal />} />
 
+        {/* Ejemplos de rutas existentes */}
+        <Route path="/listar-empleado" element={<ListarEmpleado />} />
+        <Route path="/crear-empleado" element={<CrearEmpleado />} />
+        <Route path="/pilotos" element={<ListarPiloto />} />
 
-
-      {/* Crear */}
-      <Route path="/crear-autcir" element={<CrearAutCir />} />
-      <Route path="/crear-auttec" element={<CrearAutTec />} />
-      <Route path="/crear-auto" element={<CrearAuto />} />
-      <Route path="/crear-carrera" element={<CrearCarrera />} />
-      <Route path="/crear-circuito" element={<CrearCircuito />} />
-      <Route path="/crear-empleado" element={<CrearEmpleado />} />
-      <Route path="/crear-especialidad" element={<CrearEspecialidad />} />
-      <Route path="/crear-estado" element={<CrearEstado />} />
-      <Route path="/crear-jefeequipo" element={<CrearJefeEquipo />} />
-      <Route path="/crear-modelo" element={<CrearModelo />} />
-      <Route path="/crear-motor" element={<CrearMotor />} />
-      <Route path="/crear-nacionalidad" element={<CrearNacionalidad />} />
-      <Route path="/crear-penalizacion" element={<CrearPenalizacion />} />
-      <Route path="/crear-pilcarr" element={<CrearPilCarr />} />
-      <Route path="/crear-piloto" element={<CrearPiloto />} />
-      <Route path="/crear-servicio" element={<CrearServicio />} />
-      <Route path="/crear-tecnico" element={<CrearTecnico />} />
-      <Route path="/crear-tipo-penalizacion" element={<CrearTipoPenalizacion />} />
-      
-      {/* Editar */}
-      <Route path="/editar-autcir" element={<EditarAutCir />} />
-      <Route path="/editar-auttec" element={<EditarAutTec />} />
-      <Route path="/editar-auto" element={<EditarAuto />} />
-      <Route path="/editar-carrera" element={<EditarCarrera />} />
-      <Route path="/editar-circuito" element={<EditarCircuito />} />
-      <Route path="/editar-empleado" element={<EditarEmpleado />} />
-      <Route path="/editar-especialidad" element={<EditarEspecialidad />} />
-      <Route path="/editar-estado" element={<EditarEstado />} />
-      <Route path="/editar-jefeequipo" element={<EditarJefeEquipo />} />
-      <Route path="/editar-modelo" element={<EditarModelo />} />
-      <Route path="/editar-motor" element={<EditarMotor />} />
-      <Route path="/editar-nacionalidad" element={<EditarNacionalidad />} />
-      <Route path="/editar-penalizacion" element={<EditarPenalizacion />} />
-      <Route path="/editar-pilcarr" element={<EditarPilCarr />} />
-      <Route path="/editar-piloto" element={<EditarPiloto />} />
-      <Route path="/editar-servicio" element={<EditarServicio />} />
-      <Route path="/editar-tecnico" element={<EditarTecnico />} />
-      <Route path="/editar-tipo-penalizacion" element={<EditarTipoPenalizacion />} />
-
-      {/* ELIMINAR*/}
-      <Route path="/eliminar-autcir" element={<EliminarAutCir />} />
-      <Route path="/eliminar-auttec" element={<EliminarAutTec />} />
-      <Route path="/eliminar-auto" element={<EliminarAuto />} />
-      <Route path="/eliminar-carrera" element={<EliminarCarrera />} />
-      <Route path="/eliminar-circuito" element={<EliminarCircuito />} />
-      <Route path="/eliminar-empleado" element={<EliminarEmpleado />} />
-      <Route path="/eliminar-especialidad" element={<EliminarEspecialidad />} />
-      <Route path="/eliminar-estado" element={<EliminarEstado />} />
-      <Route path="/eliminar-jefeequipo" element={<EliminarJefeEquipo />} />
-      <Route path="/eliminar-modelo" element={<EliminarModelo />} />
-      <Route path="/eliminar-motor" element={<EliminarMotor />} />
-      <Route path="/eliminar-nacionalidad" element={<EliminarNacionalidad />} />
-      <Route path="/eliminar-penalizacion" element={<EliminarPenalizacion />} />
-      <Route path="/eliminar-pilcarr" element={<EliminarPilCarr />} />
-      <Route path="/eliminar-piloto" element={<EliminarPiloto />} />
-      <Route path="/eliminar-servicio" element={<EliminarServicio />} />
-      <Route path="/eliminar-tecnico" element={<EliminarTecnico />} />
-      <Route path="/eliminar-tipo-penalizacion" element={<EliminarTipoPenalizacion />} />
-      
-      {/* Buscar */}
-      <Route path="/buscar-autcir" element={<BuscarAutCir />} />
-      <Route path="/buscar-auttec" element={<BuscarAutTec />} />
-      <Route path="/buscar-auto" element={<BuscarAuto />} />
-      <Route path="/buscar-carrera" element={<BuscarCarrera />} />
-      <Route path="/buscar-circuito" element={<BuscarCircuito />} />
-      <Route path="/buscar-empleado" element={<BuscarEmpleado />} />
-      <Route path="/buscar-especialidad" element={<BuscarEspecialidad />} />
-      <Route path="/buscar-estado" element={<BuscarEstado />} />
-      <Route path="/buscar-jefeequipo" element={<BuscarJefeEquipo />} />
-      <Route path="/buscar-modelo" element={<BuscarModelo />} />
-      <Route path="/buscar-motor" element={<BuscarMotor />} />
-      <Route path="/buscar-nacionalidad" element={<BuscarNacionalidad />} />
-      <Route path="/buscar-penalizacion" element={<BuscarPenalizacion />} />
-      <Route path="/buscar-pilcarr" element={<BuscarPilCarr />} />
-      <Route path="/buscar-piloto" element={<BuscarPiloto />} />
-      <Route path="/buscar-servicio" element={<BuscarServicio />} />
-      <Route path="/buscar-tecnico" element={<BuscarTecnico />} />
-      <Route path="/buscar-tipo-penalizacion" element={<BuscarTipoPenalizacion />} />
-
-      {/* Listar */}
-      <Route path="/listar-autcir" element={<ListarAutCir />} />
-      <Route path="/listar-auttec" element={<ListarAutTec />} />
-      <Route path="/listar-auto" element={<ListarAuto />} />
-      <Route path="/listar-carrera" element={<ListarCarrera />} />
-      <Route path="/listar-circuito" element={<ListarCircuito />} />
-      <Route path="/listar-empleado" element={<ListarEmpleado />} />
-      <Route path="/listar-especialidad" element={<ListarEspecialidad />} />
-      <Route path="/listar-estado" element={<ListarEstado />} />
-      <Route path="/listar-jefeequipo" element={<ListarJefeEquipo />} />
-      <Route path="/listar-modelo" element={<ListarModelo />} />
-      <Route path="/listar-motor" element={<ListarMotor />} />
-      <Route path="/listar-nacionalidad" element={<ListarNacionalidad />} />
-      <Route path="/listar-penalizacion" element={<ListarPenalizacion />} />
-      <Route path="/listar-pilcarr" element={<ListarPilCarr />} />
-      <Route path="/listar-piloto" element={<ListarPiloto />} />
-      <Route path="/listar-servicio" element={<ListarServicio />} />
-      <Route path="/listar-tecnico" element={<ListarTecnico />} />
-      <Route path="/listar-tipo-penalizacion" element={<ListarTipoPenalizacion />} />
-
-        {/* ==== RELACIONES ==== */}
-        <Route path="/piloto-asignar-auto" element={<RelacionPilotoAutoAsignar />} />
-        <Route path="/piloto-eliminar-auto" element={<RelacionPilotoAutoEliminar />} />
-        <Route path="/piloto-ver-autos" element={<RelacionPilotoVerAutos />} />
-        <Route path="/piloto-ver-pilotos" element={<RelacionPilotoVerPilotos />} />
-
-        <Route path="/tecnico-asignar-especialidad" element={<RelacionTecnicoEspecialidadAsignar />} />
-        <Route path="/tecnico-eliminar-especialidad" element={<RelacionTecnicoEspecialidadEliminar />} />
-        <Route path="/tecnico-ver-especialidades" element={<RelacionTecnicoVerEspecialidades />} />
-
-        <Route path="/penalizacion-asignar-piloto" element={<RelacionPenalizacionPilotoAsignar />} />
-        <Route path="/penalizacion-eliminar-piloto" element={<RelacionPenalizacionPilotoEliminar />} />
-        <Route path="/penalizacion-ver-por-piloto" element={<RelacionPenalizacionVerPorPiloto />} />
-
-        <Route path="/penalizacion-asignar-carrera" element={<RelacionPenalizacionCarreraAsignar />} />
-        <Route path="/penalizacion-eliminar-carrera" element={<RelacionPenalizacionCarreraEliminar />} />
-        <Route path="/penalizacion-ver-por-carrera" element={<RelacionPenalizacionVerPorCarrera />} />
-
-        <Route path="/penalizacion-asignar-tipo" element={<RelacionPenalizacionTipoAsignar />} />
-        <Route path="/penalizacion-quitar-tipo" element={<RelacionPenalizacionTipoEliminar />} />
-        <Route path="/penalizacion-ver-tipos" element={<RelacionPenalizacionVerTipos />} />
-
-        {/* ================== REPORTES ================== */}
-
-        <Route path="/reporte/auto/velocidad" element={<ReporteAutoVelocidad />} />
-        <Route path="/reporte/auto/servicios" element={<ReporteAutoServicios />} />
-        <Route path="/reporte/penalizacion/piloto" element={<PenalizacionPorPiloto />} />
-        <Route path="/reporte/penalizacion/carrera" element={<PenalizacionPorCarrera />} />
-        <Route path="/reporte/circuito/rendimiento" element={<RendimientoCircuito />} />
-        <Route path="/reporte/circuito/ganador" element={<CircuitoGanador />} />
-        <Route path="/reporte/circuito/resumen" element={<CircuitoResumen />} />
-        <Route path="/reporte/piloto/resultado" element={<PilotoResultado />} />
-        <Route path="/reporte/piloto/resumen" element={<PilotoResumenRendimiento />} />
-        <Route path="/reporte/piloto/podio" element={<PilotoPodios />} />
-        <Route path="/reporte/tecnico/rendimiento" element={<TecnicoRendimiento />} />
-        <Route path="/reporte/tecnico/autos" element={<TecnicoAutos />} />
-    </Routes>
+        {/* Ruta por defecto si no existe */}
+        <Route path="*" element={<h2 style={{ color: "white" }}>404 - Página no encontrada</h2>} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

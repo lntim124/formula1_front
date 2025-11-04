@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from "react";
 import "./Empleado.css";
 import EmpleadoService from "../../Service/EmpleadoService";
-import { useNavigate } from "react-router-dom";
 
-function Empleado() {
+function ListarEmpleado({ irACrear }) {
   const [rows, setRows] = useState([]);
-  const navigate = useNavigate();
-const irACrear = () => navigate("/crear-empleado");
 
   useEffect(() => {
     EmpleadoService.getAllEmpleado()
       .then(res => setRows(res.data || []))
-      .catch(() => alert("Error cargando Empleados"));
+      .catch((e) => {
+        alert("Error cargando Empleados");
+        console.error(e);
+      });
   }, []);
-
+  
   return (
     <div className="list-container">
-      <h2>Empleados</h2>
-      <button type="button"  onClick={irACrear}>
-            Crear Empleado
-          </button>
+      <div className="header-row">
+        <h2>Empleados</h2>
+        <button type="button" onClick={irACrear} className="btn-crear">
+          Crear Empleado
+        </button>
+      </div>
+
       <div className="table-wrap">
         <table>
           <thead>
@@ -47,4 +50,5 @@ const irACrear = () => navigate("/crear-empleado");
     </div>
   );
 }
-export default Empleado;
+
+export default ListarEmpleado;

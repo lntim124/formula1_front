@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Empleado = () => {
   const navigate = useNavigate();
+  const irAListar = () => navigate("/listar-empleado");
 
   const [form, setForm] = useState({
     fechaNacimiento: "",
@@ -34,7 +35,7 @@ const Empleado = () => {
       .then((res) => {
         console.log("Empleado creado:", res.data);
         alert("Empleado registrado ");
-        navigate("/lista-empleado"); // ajusta a tu ruta real
+        navigate("/dashboard"); // ajusta a tu ruta real
       })
       .catch((err) => {
         console.error(err);
@@ -42,7 +43,11 @@ const Empleado = () => {
       });
   };
 
-  const handleBack = () => navigate("/lista-empleado");
+  const handleBack = () =>{
+    console.log("lina")
+     navigate("/dashboard");
+    }
+
 
   const fields = [
     { label: "Fecha de Nacimiento", name: "fechaNacimiento", type: "date" },
