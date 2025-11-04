@@ -156,6 +156,8 @@ function App() {
         <Route path="/listar-empleado" element={<ListarEmpleado />} />
         <Route path="/crear-empleado" element={<CrearEmpleado />} />
         <Route path="/pilotos" element={<ListarPiloto />} />
+        
+
 
         {/* Ruta por defecto si no existe */}
         <Route path="*" element={<h2 style={{ color: "white" }}>404 - Página no encontrada</h2>} />

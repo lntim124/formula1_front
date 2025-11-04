@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Auto.css";
 import AutoService from "../../Service/AutoService";
 
- function Auto() {
+ function ListarAuto({ irACrear }) {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,12 @@ import AutoService from "../../Service/AutoService";
 
   return (
     <div className="list-container">
+      <div className="header-row">
       <h2>Autos</h2>
+    <button type="button" onClick={irACrear} className="btn-crear">
+        Crear Auto
+        </button>
+        </div>
       <div className="table-wrap">
         <table>
           <thead>
@@ -41,4 +46,4 @@ import AutoService from "../../Service/AutoService";
     </div>
   );
 }
-export default Auto;
+export default ListarAuto;

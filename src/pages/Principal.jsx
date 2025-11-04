@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import CrearEmpleado from "../Components/Crear/Empleado";
 import ListarEmpleado from "../Components/Listar/Empleado";
 import ListarAuto from "../Components/Listar/Auto.jsx";
+import ListarCarrera from "../Components/Listar/Carrera.jsx";
+import ListarPenalizacion from "../Components/Listar/Penalizacion.jsx";
+
+
 
 import {
   FaHome,
@@ -143,32 +147,47 @@ export default function Principal() {
 
   const c = styles;
 
-  // === función para cambiar desde los componentes hijos ===
-  const handleChangeView = (viewName) => {
-    setActive(viewName);
+  // Función para cambiar vistas (desde los componentes hijos)
+  const [vista, setVista] = useState("listar-empleado");
+
+  const handleChangeView = (nuevaVista) => {
+    setVista(nuevaVista);
   };
 
   /* ---------- Contenido dinámico ---------- */
   const renderContent = () => {
     switch (active) {
+      // === EMPLEADOS ===
       case "Empleados":
-        // Le pasamos la función para que desde ListarEmpleado pueda llamar a CrearEmpleado
-        return <ListarEmpleado irACrear={() => handleChangeView("CrearEmpleado")} />;
+        return (
+          <div style={{ padding: "20px" }}>
+      {vista === "listar-empleado" && (
+        <ListarEmpleado irACrear={() => handleChangeView("crear-empleado")} />
+      )}
+
+      {vista === "crear-empleado" && (
+        <CrearEmpleado onChangeView={handleChangeView} />
+      )}
+    </div>
+        );
 
       case "CrearEmpleado":
         return <CrearEmpleado volver={() => handleChangeView("Empleados")} />;
 
+      // === AUTOS ===
       case "Autos":
-        return <ListarAuto />;
+        return(
+          <ListarAuto></ListarAuto>
+        )
 
       case "Carreras":
-        return <h2>Calendario y resultados de Carreras</h2>;
-
+        return <ListarCarrera></ListarCarrera>
+        
       case "Penalizaciones":
-        return <h2>Historial de Penalizaciones</h2>;
+        return <ListarPenalizacion></ListarPenalizacion>
 
       case "Análisis y Reportes":
-        return <h2>Panel de Análisis y Reportes</h2>;
+        return 
 
       default:
         return (
@@ -177,9 +196,10 @@ export default function Principal() {
             <div style={c.homeTitle}>
               <h2>CONOCE LA HISTORIA DE TU EQUIPO</h2>
               <p style={c.homeText}>
-                Red Bull Racing es una de las escuderías más exitosas y admiradas de la Fórmula 1 moderna. 
-                Fundada en 2005, tras la compra del antiguo equipo Jaguar Racing por parte de Red Bull GmbH,
-                la escudería estableció su sede en Milton Keynes, Reino Unido...
+                Red Bull Racing es una de las escuderías más exitosas y admiradas
+                de la Fórmula 1 moderna. Fundada en 2005, tras la compra del
+                antiguo equipo Jaguar Racing por parte de Red Bull GmbH, la
+                escudería estableció su sede en Milton Keynes, Reino Unido...
               </p>
             </div>
           </div>
@@ -196,14 +216,40 @@ export default function Principal() {
         </div>
 
         <nav>
-          <NavItem icon={<FaUser />} label="Pilotos" active={active === "Pilotos"} onClick={() => setActive("Pilotos")} />
-          <NavItem icon={<FaHome />} label="Empleados" active={active === "Empleados"} onClick={() => setActive("Empleados")} />
-          <NavItem icon={<FaTools />} label="Técnicos" active={active === "Técnicos"} onClick={() => setActive("Técnicos")} />
-          <NavItem icon={<FaFlagCheckered />} label="Carreras" active={active === "Carreras"} onClick={() => setActive("Carreras")} />
-          <NavItem icon={<FaRoad />} label="Circuitos" active={active === "Circuitos"} onClick={() => setActive("Circuitos")} />
-          <NavItem icon={<FaCar />} label="Autos" active={active === "Autos"} onClick={() => setActive("Autos")} />
-          <NavItem icon={<FaExclamationTriangle />} label="Penalizaciones" active={active === "Penalizaciones"} onClick={() => setActive("Penalizaciones")} />
-          <NavItem icon={<FaChartBar />} label="Análisis y Reportes" active={active === "Análisis y Reportes"} onClick={() => setActive("Análisis y Reportes")} />
+          {/* Aquí puedes ir agregando más secciones */}
+          
+          <NavItem
+            icon={<FaHome />}
+            label="Empleados"
+            active={active === "Empleados" || active === "CrearEmpleado"}
+            onClick={() => setActive("Empleados")}
+          />
+          
+          <NavItem
+            icon={<FaFlagCheckered />}
+            label="Carreras"
+            active={active === "Carreras"}
+            onClick={() => setActive("Carreras")}
+          />
+          
+          <NavItem
+            icon={<FaCar />}
+            label="Autos"
+            active={active === "Autos"}
+            onClick={() => setActive("Autos")}
+          />
+          <NavItem
+            icon={<FaExclamationTriangle />}
+            label="Penalizaciones"
+            active={active === "Penalizaciones"}
+            onClick={() => setActive("Penalizaciones")}
+          />
+          <NavItem
+            icon={<FaChartBar />}
+            label="Análisis y Reportes"
+            active={active === "Análisis y Reportes"}
+            onClick={() => setActive("Análisis y Reportes")}
+          />
         </nav>
       </aside>
 

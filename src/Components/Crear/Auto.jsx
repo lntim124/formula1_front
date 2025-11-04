@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 const Auto = () => {
   const navigate = useNavigate();
+    const irAListar = () => navigate("/listar-auto");
+
 
   const [auto, setAuto] = useState({
     placa: "",
@@ -33,7 +35,7 @@ const Auto = () => {
       .then((response) => {
         console.log("Auto guardado:", response.data);
         alert("Auto creado correctamente ");
-        navigate("/listar-auto");
+        navigate("/dashboard");
       })
       .catch((error) => {
         console.error("Error al guardar el auto", error);
@@ -42,13 +44,12 @@ const Auto = () => {
   };
 
   const handleBack = () => {
-    navigate("/listar-auto");
+    navigate("/dashboard");
   };
 
   return (
     <div className="form-container">
       <h2 className="text-center">Registrar Auto</h2>
-
       <form onSubmit={handleSubmit} className="form">
         {[
           { label: "Placa", name: "placa", type: "text" },
