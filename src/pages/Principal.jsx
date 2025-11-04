@@ -7,11 +7,6 @@ import ListarPenalizacion from "../Components/Listar/Penalizacion.jsx";
 import ListarCarrera from "../Components/Listar/Carrera.jsx";
 
 
-
-
-
-
-
 import {
   FaHome,
   FaFlagCheckered,
