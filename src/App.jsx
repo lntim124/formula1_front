@@ -147,10 +147,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Página inicial */}
-        <Route path="/" element={<Navigate to="/dashboard" />} />
-
-        {/* Dashboard principal */}
+        <Route path="/" element={<Navigate to="/welcome" />} />
+        <Route path="/welcome" element={<Welcome/>} />
         <Route path="/dashboard" element={<Principal />} />
+
 
         {/* Ejemplos de rutas existentes */}
         <Route path="/listar-empleado" element={<ListarEmpleado />} />
